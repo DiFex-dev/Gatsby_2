@@ -9,6 +9,10 @@ import styles from './Layout.styles';
 
 import '../../styles/normalize.css';
 import '../../fonts/fonts.css';
+import HeadImpact from "@economist/fabric-components/header/headimpact/HeadImpact";
+import HeadAdvImpact from "@economist/fabric-components/header/headadvimpact/HeadAdvImpact";
+import FootEconSec from "@economist/fabric-components/footer/footeconsec/FootEconSec";
+import {hero} from "../../../content/home";
 
 /**
  * @param children - used as content for layout
@@ -18,6 +22,14 @@ import '../../fonts/fonts.css';
  * @returns {JSX.Element}
  * @constructor
  */
+
+const sponsorsList = [
+  {
+    sponsorLogo: hero.sponsorLogo,
+    sponsorName: 'Desktop Logo',
+    sponsorLink: 'https://www.economist.com/'
+  },
+];
 
 const Layout = ({ children, title, description, image }) => {
   useEffect(() => {
@@ -36,7 +48,16 @@ const Layout = ({ children, title, description, image }) => {
       <Seo title={title} description={description} image={image} />
       <PreloadStatic />
       <div css={styles}>
+        <div className="header-wrapper">
+          <HeadImpact HorizontalRule={false} />
+        </div>
+        <div className="headAdvImpact-wrapper">
+          <HeadAdvImpact sponsors={sponsorsList}/>
+        </div>
         <main>{children}</main>
+        <div className="footer-wrapper">
+          <FootEconSec />
+        </div>
       </div>
     </>
   );
