@@ -3,7 +3,7 @@ import {css} from '@emotion/react'
 import {p2r} from '../../styles/fonts';
 
 const style = css`
-  .textImage {
+  .bodyImage {
     margin: ${p2r(33)} 0;
   }
 `

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {BodyText} from '../../components/BodyText';
+import { BodyText } from '../../components/BodyText';
 import { Hero } from '../../components/Hero';
-import Image from '../../components/Image/Image';
+import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import styles from './HomePageTemplate.styles';
 
@@ -10,7 +10,24 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
   const { hero, seo, body, graph, gold, stat } = PageData;
   const { title, btnText, sponsorLogo, backgroundImage, downloadFile, buttonIconBlack } = hero;
   const { title: seoTitle, description, image } = seo;
-  const { bodyTextFirst, bodyTextSecond, bodyTextThird, bodyTextFourth, bodyTextFifth, bodyTextSixth, bodyTextSeventh, bodyTextEighth, bodyTextNinth, bodyTextTenth, bodyTextEleventh, bodyTextTwelve, subTitleFirst, subTitleSecond, subTitleThird, subTitleFourth } = body;
+  const {
+    bodyTextFirst,
+    bodyTextSecond,
+    bodyTextThird,
+    bodyTextFourth,
+    bodyTextFifth,
+    bodyTextSixth,
+    bodyTextSeventh,
+    bodyTextEighth,
+    bodyTextNinth,
+    bodyTextTenth,
+    bodyTextEleventh,
+    bodyTextTwelve,
+    subTitleFirst,
+    subTitleSecond,
+    subTitleThird,
+    subTitleFourth,
+  } = body;
   const { image: graphImage, alt: graphAlt } = graph;
   const { image: goldImage, alt: goldAlt } = gold;
   const { image: statImage, alt: statAlt } = stat;
@@ -34,19 +51,15 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
             <div className="content-container">
               <BodyText textFirst={bodyTextFirst} textSecond={bodyTextSecond} />
               <BodyText subtitle={subTitleFirst} textFirst={bodyTextThird} textSecond={bodyTextFourth} />
-              <Image image={statImage} alt={statAlt}/>
+              <Image image={statImage} alt={statAlt} />
               <BodyText textFirst={bodyTextFifth} />
-              <BodyText subtitle={subTitleSecond} textFirst={bodyTextSixth} textSecond={bodyTextSeventh}/>
+              <BodyText subtitle={subTitleSecond} textFirst={bodyTextSixth} textSecond={bodyTextSeventh} />
               <Image image={goldImage} alt={goldAlt} />
               <BodyText subtitle={subTitleThird} textFirst={bodyTextEighth} textSecond={bodyTextNinth} />
               <Image image={graphImage} alt={graphAlt} />
-              <BodyText textFirst={bodyTextTenth}/>
-              <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh}/>
-              <BodyText textFirst={bodyTextTwelve}/>
-              <a href="#" className="download-btn">
-                <p dangerouslySetInnerHTML={{ __html: PageData.hero.btnText }} />
-                <img src={PageData.hero.buttonIconWhite} alt="Button" />
-              </a>
+              <BodyText textFirst={bodyTextTenth} />
+              <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
+              <BodyText textFirst={bodyTextTwelve} />
             </div>
           </div>
         </div>
