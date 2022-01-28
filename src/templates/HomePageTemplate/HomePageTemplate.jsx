@@ -2,6 +2,7 @@ import React from 'react';
 
 import {BodyText} from '../../components/BodyText';
 import { Hero } from '../../components/Hero';
+import Image from '../../components/Image/Image';
 import { Layout } from '../../components/Layout';
 import styles from './HomePageTemplate.styles';
 
@@ -33,15 +34,18 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
             <div className="content-container">
               <BodyText textFirst={bodyTextFirst} textSecond={bodyTextSecond} />
               <BodyText subtitle={subTitleFirst} textFirst={bodyTextThird} textSecond={bodyTextFourth} />
+              <Image image={statImage} alt={statAlt}/>
               <BodyText textFirst={bodyTextFifth} />
               <BodyText subtitle={subTitleSecond} textFirst={bodyTextSixth} textSecond={bodyTextSeventh}/>
+              <Image image={goldImage} alt={goldAlt} />
               <BodyText subtitle={subTitleThird} textFirst={bodyTextEighth} textSecond={bodyTextNinth} />
+              <Image image={graphImage} alt={graphAlt} />
               <BodyText textFirst={bodyTextTenth}/>
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh}/>
               <BodyText textFirst={bodyTextTwelve}/>
               <a href="#" className="download-btn">
                 <p dangerouslySetInnerHTML={{ __html: PageData.hero.btnText }} />
-                <img src={PageData.hero.buttonIconWhite} />
+                <img src={PageData.hero.buttonIconWhite} alt="Button" />
               </a>
             </div>
           </div>

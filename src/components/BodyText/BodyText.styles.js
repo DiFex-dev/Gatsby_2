@@ -27,6 +27,10 @@ const style = css`
     text-align: left;
     letter-spacing: normal;
   }
+
+  .second {
+    margin-top: ${p2r(30)};
+  }
 `;
 
 export default style;
