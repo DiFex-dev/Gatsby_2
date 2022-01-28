@@ -1,0 +1,94 @@
+import { css } from '@emotion/react';
+
+import colors from '../../styles/colors';
+import { p2r } from '../../styles/fonts';
+
+const styles = css`
+  .template-container {
+    position: relative;
+  }
+
+  .mainSection-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: ${p2r(50)};
+  }
+
+  .menu-container {
+    width: 320px;
+    margin-right: 112px;
+  }
+
+  .content-container {
+    width: 800px;
+    margin-right: 210px;
+  }
+
+  .subtitle {
+    margin-top: ${p2r(52)};
+    margin-bottom: ${p2r(32)};
+    font-family: Lexia;
+    font-size: ${p2r(32)};
+    font-style: normal;
+    font-weight: bold;
+    line-height: ${p2r(48)};
+    color: ${colors.grayBlack};
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  .subtitle-img {
+    margin: ${p2r(32)} 0;
+  }
+
+  .subtitle-imgGold {
+    margin-top: ${p2r(32)};
+  }
+
+  .body-text {
+    font-family: Univers;
+    font-size: ${p2r(18)};
+    font-style: normal;
+    font-weight: 300;
+    line-height: ${p2r(26)};
+    color: ${colors.grayBlack};
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  .download-btn {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: ${p2r(80)};
+    margin-top: ${p2r(50)};
+    margin-bottom: ${p2r(128)};
+    font-family: Univers, sans-serif;
+    font-size: ${p2r(18)};
+    font-weight: normal;
+    color: ${colors.white};
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: ${colors.grayBlack};
+    border-radius: 40px;
+
+    &:hover {
+      background: ${colors.grayGold};
+      transition: 0.3s;
+
+    }
+  }
+
+  .cardContent {
+    width: 100%;
+    height: ${p2r(498)};
+    background-color: ${colors.lightGold};
+    box-shadow: inset 0 160px ${colors.white};
+  }
+`;
+
+export default styles;

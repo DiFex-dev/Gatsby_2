@@ -27,12 +27,43 @@ const createPages = async ({ actions, graphql }) => {
             hero {
               backgroundImage
               sponsorLogo
-              buttonIcon
+              buttonIconBlack
+              buttonIconWhite
               mobileBackgroundImage
               title
               subtitle
               btnText
               downloadFile
+            }
+            body {
+              bodyTextFirst
+              bodyTextSecond
+              bodyTextThird
+              bodyTextFourth
+              bodyTextFifth
+              bodyTextSixth
+              bodyTextSeventh
+              bodyTextEighth
+              bodyTextNinth
+              bodyTextTenth
+              bodyTextEleventh
+              bodyTextTwelve
+              subTitleFirst
+              subTitleSecond
+              subTitleThird
+              subTitleFourth
+            }
+            graph {
+              image
+              alt
+            }
+            gold {
+              image
+              alt
+            }
+            stat {
+              image
+              alt
             }
             text {
               first

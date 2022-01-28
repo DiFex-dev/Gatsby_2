@@ -3,9 +3,7 @@ import { css } from '@emotion/react';
 import colors from '../../styles/colors';
 import { p2r } from '../../styles/fonts';
 
-const gradient = {
-  background: 'transparent linear-gradient(16deg, #BB9B66 0, #C6AA71 48%, #E9D793 86%, #D9C184 100%) 0 0 no-repeat',
-};
+const gradientBackground = 'transparent linear-gradient(16deg, #BB9B66 0, #C6AA71 48%, #E9D793 86%, #D9C184 100%) 0 0 no-repeat';
 
 const styles = css`
   .template-container {
@@ -19,7 +17,7 @@ const styles = css`
     margin-left: 340px;
   }
 
-  .iconSocial {
+  .title-icon {
     margin-right: 80px;
   }
 
@@ -51,7 +49,7 @@ const styles = css`
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    background: ${gradient.background};
+    background: ${gradientBackground};
     border-radius: 40px;
 
     &:hover {

@@ -2,7 +2,7 @@ import UtilSocShare from '@economist/fabric-components/utility/utilsocshare/Util
 import React from 'react';
 
 import { Wrapper } from '../Wrapper';
-import styles from './Hero.style';
+import styles from './Hero.styles';
 
 const Hero = ({ title, btnText, logo, background, downloadFile, btnIcon }) => {
   const sponsorsList = [
@@ -19,14 +19,14 @@ const Hero = ({ title, btnText, logo, background, downloadFile, btnIcon }) => {
         <div className="template-container">
           <div className="hero">
             <div className="title-container">
-              <div className="iconSocial">
+              <div className="title-icon">
                 <UtilSocShare hasBorder={false} hoverBase={'#B29E71'} hoverIcon={'#f9f8f5'} className="social" />
               </div>
               <h1 className="title" dangerouslySetInnerHTML={{ __html: title }} />
             </div>
             <div className="image">
               <a href={downloadFile} className="download-btn" download="">
-                <p dangerouslySetInnerHTML={{ __html: btnText }} />
+                <p>{btnText}</p>
                 <img src={btnIcon} alt="buttonIcon" />
               </a>
               <img src={background} alt="heroImage" />
