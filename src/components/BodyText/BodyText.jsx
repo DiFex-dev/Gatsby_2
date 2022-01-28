@@ -4,11 +4,9 @@ import styles from './BodyText.styles';
 
 const BodyText = ({ subtitle, textFirst, textSecond}) => (
   <div css={styles}>
-    <h2 className="subtitle">{subtitle}</h2>
-    <div className="body-text"/>
-      <p>{textFirst}</p>
-      <br/>
-      <p>{textSecond}</p>
+    {subtitle && <h2 className="subtitle">{subtitle}</h2>}
+      <p className="body-text">{textFirst}</p>
+      {textSecond && <p className="body-text second">{textSecond}</p>}
   </div>
 );
 
