@@ -5,10 +5,11 @@ import { Hero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import styles from './HomePageTemplate.styles';
+import DownloadBtn from '../../components/DownloadBtn/DownloadBtn';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
   const { hero, seo, body, graph, gold, stat } = PageData;
-  const { title, btnText, sponsorLogo, backgroundImage, downloadFile, buttonIconBlack } = hero;
+  const { title, btnText, sponsorLogo, backgroundImage, downloadFile, buttonIconBlack, buttonIconWhite } = hero;
   const { title: seoTitle, description, image } = seo;
   const {
     bodyTextFirst,
@@ -60,6 +61,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <BodyText textFirst={bodyTextTenth} />
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
               <BodyText textFirst={bodyTextTwelve} />
+              <DownloadBtn downloadFile={downloadFile} btnText={btnText} btnIcon={buttonIconWhite}/>
             </div>
           </div>
         </div>
