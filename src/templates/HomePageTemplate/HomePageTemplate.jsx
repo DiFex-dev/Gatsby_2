@@ -1,14 +1,15 @@
 import React from 'react';
 
 import { BodyText } from '../../components/BodyText';
+import { DownloadBtn } from '../../components/DownloadBtn';
 import { Hero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import styles from './HomePageTemplate.styles';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
-  const { hero, seo, body, graph, gold, stat } = PageData;
-  const { title, btnText, sponsorLogo, backgroundImage, downloadFile, buttonIconBlack } = hero;
+  const { hero, seo, body } = PageData;
+  const { title, btnText, sponsorLogo, backgroundImage, downloadFile, buttonIconBlack, buttonIconWhite } = hero;
   const { title: seoTitle, description, image } = seo;
   const {
     bodyTextFirst,
@@ -27,10 +28,10 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     subTitleSecond,
     subTitleThird,
     subTitleFourth,
+    graph: { image: graphImage, alt: graphAlt },
+    gold: { image: goldImage, alt: goldAlt },
+    stat: { image: statImage, alt: statAlt },
   } = body;
-  const { image: graphImage, alt: graphAlt } = graph;
-  const { image: goldImage, alt: goldAlt } = gold;
-  const { image: statImage, alt: statAlt } = stat;
 
   return (
     <Layout title={seoTitle} description={description} image={image}>
@@ -60,6 +61,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <BodyText textFirst={bodyTextTenth} />
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
               <BodyText textFirst={bodyTextTwelve} />
+              <DownloadBtn downloadFile={downloadFile} btnText={btnText} btnIcon={buttonIconWhite} isDark={true} />
             </div>
           </div>
         </div>
