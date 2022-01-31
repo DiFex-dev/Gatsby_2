@@ -17,7 +17,7 @@ const dark = {
   border: ''
 }
 
-const styles = (propsDark) => css`
+const styles = (isDark) => css`
   .download-btn {
     display: flex;
     gap: 16px;
@@ -28,16 +28,16 @@ const styles = (propsDark) => css`
     font-family: Univers, sans-serif;
     font-size: ${p2r(18)};
     font-weight: normal;
-    color: ${propsDark === false ? light.color : ''} ${propsDark === true ? dark.color : ''};
+    color: ${isDark ? dark.color : light.color};
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
-    background: ${propsDark === false ? light.background : ''} ${propsDark === true ? dark.background : ''};
+    background: ${isDark ? dark.background : light.background};
     border-radius: 40px;
 
     &:hover {
-      background: ${propsDark === false ? light.hover : ''} ${propsDark === true ? dark.hover : ''};
-      border: ${propsDark === false ? light.border : ''} ${propsDark === true ? dark.border : ''};
+      background: ${isDark ? dark.hover : light.hover};
+      border: ${isDark ? dark.border : light.border};
     }
   }
 `;

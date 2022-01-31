@@ -31,19 +31,19 @@ module.exports = {
     subTitleFirst: 'Key insight 1',
     subTitleSecond: 'Key insight 2',
     subTitleThird: 'Key insight 3',
-    subTitleFourth: 'Key insight 4'
-  },
-  graph: {
-    image: '/images/HomePage/GraphImage.png',
-    alt: `Chart`
-  },
-  gold: {
-    image: '/images/HomePage/GoldImage.png',
-    alt: 'Gold'
-  },
-  stat: {
-    image: '/images/HomePage/StatisticImage.png',
-    alt: 'Diagram'
+    subTitleFourth: 'Key insight 4',
+    graph: {
+      image: '/images/HomePage/GraphImage.png',
+      alt: `Chart`
+    },
+    gold: {
+      image: '/images/HomePage/GoldImage.png',
+      alt: 'Gold'
+    },
+    stat: {
+      image: '/images/HomePage/StatisticImage.png',
+      alt: 'Diagram'
+    },
   },
   text: {
     first: 'First text',

@@ -52,18 +52,18 @@ const createPages = async ({ actions, graphql }) => {
               subTitleSecond
               subTitleThird
               subTitleFourth
-            }
-            graph {
+              graph {
               image
               alt
-            }
-            gold {
-              image
-              alt
-            }
-            stat {
-              image
-              alt
+              }
+              gold {
+                image
+                alt
+              }
+              stat {
+                image
+                alt
+              }
             }
             text {
               first

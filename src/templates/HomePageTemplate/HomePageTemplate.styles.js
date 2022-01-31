@@ -58,7 +58,7 @@ const styles = css`
   }
 
   .download-btn{
-    margin-top: 50px;
+    margin-top: ${p2r(50)};
   }
 
   .cardContent {
