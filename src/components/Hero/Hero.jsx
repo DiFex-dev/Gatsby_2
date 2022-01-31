@@ -3,6 +3,7 @@ import React from 'react';
 
 import { Wrapper } from '../Wrapper';
 import styles from './Hero.styles';
+import {DownloadBtn} from "../DownloadBtn";
 
 const Hero = ({ title, btnText, logo, background, downloadFile, btnIcon }) => {
   const sponsorsList = [
@@ -25,10 +26,7 @@ const Hero = ({ title, btnText, logo, background, downloadFile, btnIcon }) => {
               <h1 className="title" dangerouslySetInnerHTML={{ __html: title }} />
             </div>
             <div className="image">
-              <a href={downloadFile} className="download-btn" download="">
-                <p>{btnText}</p>
-                <img src={btnIcon} alt="buttonIcon" />
-              </a>
+              <DownloadBtn btnText={btnText} downloadFile={downloadFile} btnIcon={btnIcon} propsDark={false}/>
               <img src={background} alt="heroImage" />
             </div>
           </div>

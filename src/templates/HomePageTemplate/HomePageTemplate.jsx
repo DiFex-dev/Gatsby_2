@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { BodyText } from '../../components/BodyText';
+import DownloadBtn from '../../components/DownloadBtn/DownloadBtn';
 import { Hero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
 import styles from './HomePageTemplate.styles';
-import DownloadBtn from '../../components/DownloadBtn/DownloadBtn';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
   const { hero, seo, body, graph, gold, stat } = PageData;
@@ -61,7 +61,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <BodyText textFirst={bodyTextTenth} />
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
               <BodyText textFirst={bodyTextTwelve} />
-              <DownloadBtn downloadFile={downloadFile} btnText={btnText} btnIcon={buttonIconWhite}/>
+              <DownloadBtn downloadFile={downloadFile} btnText={btnText} btnIcon={buttonIconWhite} propsDark={true}/>
             </div>
           </div>
         </div>

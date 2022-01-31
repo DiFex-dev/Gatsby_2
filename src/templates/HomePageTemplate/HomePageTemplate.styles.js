@@ -57,6 +57,10 @@ const styles = css`
     letter-spacing: normal;
   }
 
+  .download-btn{
+    margin-top: 50px;
+  }
+
   .cardContent {
     width: 100%;
     height: ${p2r(498)};
