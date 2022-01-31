@@ -1,7 +1,7 @@
 import UtilSocShare from '@economist/fabric-components/utility/utilsocshare/UtilSocShare';
 import React from 'react';
 
-import {DownloadBtn} from '../DownloadBtn';
+import { DownloadBtn } from '../DownloadBtn';
 import { Wrapper } from '../Wrapper';
 import styles from './Hero.styles';
 
@@ -26,7 +26,7 @@ const Hero = ({ title, btnText, logo, background, downloadFile, btnIcon }) => {
               <h1 className="title" dangerouslySetInnerHTML={{ __html: title }} />
             </div>
             <div className="image">
-              <DownloadBtn btnText={btnText} downloadFile={downloadFile} btnIcon={btnIcon} isDark={false}/>
+              <DownloadBtn btnText={btnText} downloadFile={downloadFile} btnIcon={btnIcon} isDark={false} />
               <img src={background} alt="heroImage" />
             </div>
           </div>

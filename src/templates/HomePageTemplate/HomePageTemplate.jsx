@@ -8,7 +8,7 @@ import { Layout } from '../../components/Layout';
 import styles from './HomePageTemplate.styles';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
-  const { hero, seo, body, } = PageData;
+  const { hero, seo, body } = PageData;
   const { title, btnText, sponsorLogo, backgroundImage, downloadFile, buttonIconBlack, buttonIconWhite } = hero;
   const { title: seoTitle, description, image } = seo;
   const {

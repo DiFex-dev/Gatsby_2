@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './DownloadBtn.styles'
+import styles from './DownloadBtn.styles';
 
 const DownloadBtn = ({ downloadFile, btnText, btnIcon, isDark }) => (
   <div css={styles(isDark)}>
@@ -10,6 +10,5 @@ const DownloadBtn = ({ downloadFile, btnText, btnIcon, isDark }) => (
     </a>
   </div>
 );
-
 
 export default DownloadBtn;

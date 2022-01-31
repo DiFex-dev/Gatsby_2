@@ -1,21 +1,21 @@
 import { css } from '@emotion/react';
 
-import {colors} from '../../styles';
-import {p2r} from '../../styles/fonts';
+import { colors } from '../../styles';
+import { p2r } from '../../styles/fonts';
 
 const light = {
   background: 'transparent linear-gradient(16deg, #BB9B66 0, #C6AA71 48%, #E9D793 86%, #D9C184 100%) 0 0 no-repeat',
   hover: `${colors.white}`,
   color: `${colors.grayBlack}`,
-  border: `2px solid ${colors.grayGold}`
-}
+  border: `2px solid ${colors.grayGold}`,
+};
 
 const dark = {
   background: `${colors.black}`,
   hover: `${colors.grayGold}`,
   color: `${colors.white}`,
-  border: ''
-}
+  border: '',
+};
 
 const styles = (isDark) => css`
   .download-btn {

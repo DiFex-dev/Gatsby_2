@@ -57,7 +57,7 @@ const styles = css`
     letter-spacing: normal;
   }
 
-  .download-btn{
+  .download-btn {
     margin-top: ${p2r(50)};
   }
 
