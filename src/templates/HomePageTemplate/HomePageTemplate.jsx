@@ -1,10 +1,12 @@
 import React from 'react';
 
 import { BodyText } from '../../components/BodyText';
+import { CardNavigation } from '../../components/CardNavigation';
 import { DownloadBtn } from '../../components/DownloadBtn';
 import { Hero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
+import { Quote } from '../../components/Quote';
 import styles from './HomePageTemplate.styles';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
@@ -31,6 +33,16 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     graph: { image: graphImage, alt: graphAlt },
     gold: { image: goldImage, alt: goldAlt },
     stat: { image: statImage, alt: statAlt },
+    cardFirst,
+    cardSecond,
+    navFirst,
+    navSecond,
+    cardBtnTextPrev,
+    cardBtnTextNext,
+    cardBtnParagraphPrev,
+    cardBtnParagraphNext,
+    cardBtnInfoPrev,
+    cardBtnInfoNext,
   } = body;
 
   return (
@@ -60,6 +72,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <Image image={graphImage} alt={graphAlt} />
               <BodyText textFirst={bodyTextTenth} />
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
+              <Quote />
               <BodyText textFirst={bodyTextTwelve} />
               <DownloadBtn downloadFile={downloadFile} btnText={btnText} btnIcon={buttonIconWhite} isDark={true} />
             </div>
@@ -67,7 +80,25 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
         </div>
         <div className="cardContent">
           <div className="cardContent-container">
-            <div className="cardNav"></div>
+            <div className="cardNav">
+              <div className="cardIndent"></div>
+              <CardNavigation
+                cardImage={cardFirst}
+                arrow={navFirst}
+                cardBtnText={cardBtnTextPrev}
+                cardBtnParagraph={cardBtnParagraphPrev}
+                cardBtnInfo={cardBtnInfoPrev}
+                direction={'Previous'}
+              />
+              <CardNavigation
+                cardImage={cardSecond}
+                arrow={navSecond}
+                cardBtnText={cardBtnTextNext}
+                cardBtnParagraph={cardBtnParagraphNext}
+                cardBtnInfo={cardBtnInfoNext}
+                direction={'Next'}
+              />
+            </div>
           </div>
         </div>
       </div>

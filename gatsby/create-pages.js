@@ -64,6 +64,16 @@ const createPages = async ({ actions, graphql }) => {
                 image
                 alt
               }
+              cardFirst
+              cardSecond
+              navFirst
+              navSecond
+              cardBtnTextPrev
+              cardBtnTextNext
+              cardBtnParagraphPrev
+              cardBtnParagraphNext
+              cardBtnInfoPrev
+              cardBtnInfoNext
             }
             text {
               first
