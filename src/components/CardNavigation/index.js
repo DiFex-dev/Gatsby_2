@@ -1,1 +1,1 @@
-export { default as CardNavigation } from './CardNavigation'
+export { default as CardNavigation } from './CardNavigation';

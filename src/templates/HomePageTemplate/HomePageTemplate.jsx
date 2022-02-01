@@ -33,16 +33,9 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     graph: { image: graphImage, alt: graphAlt },
     gold: { image: goldImage, alt: goldAlt },
     stat: { image: statImage, alt: statAlt },
-    quoteTextFirst,
-    quoteAuthor,
-    cardFirst,
-    cardSecond,
-    navFirst,
-    navSecond,
-    cardBtnParagraphPrev,
-    cardBtnParagraphNext,
-    cardBtnInfoPrev,
-    cardBtnInfoNext,
+    cardImg: { cardFirst, cardSecond, navFirst, navSecond },
+    cardText: { cardBtnParagraphPrev, cardBtnParagraphNext, cardBtnInfoPrev, cardBtnInfoNext },
+    quoteText: { quoteTextFirst, quoteAuthor },
   } = body;
 
   return (

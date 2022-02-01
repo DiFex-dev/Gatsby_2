@@ -12,7 +12,7 @@ const CardNavigation = ({ cardImage, arrow, cardBtnParagraph, cardBtnInfo, direc
         <div className="CardButton">
           <button className="CardButton-text">
             {direction === 'Previous' && <img src={arrow} alt="left arrow" className="arrow" />}
-            {direction === 'Previous' ? 'Previous' : 'Next'}
+            <p>{direction}</p>
             {direction === 'Next' && <img src={arrow} alt="right arrow" className="arrow" />}
           </button>
           <h3 className="CardButton-paragraph">{cardBtnParagraph}</h3>
