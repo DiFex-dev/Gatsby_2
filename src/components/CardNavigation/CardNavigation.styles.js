@@ -49,6 +49,8 @@ const styles = (direction) => css`
   .CardButton-text {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     ${SecondaryProps};
     font-size: ${p2r(16)};
     font-style: normal;
@@ -59,6 +61,10 @@ const styles = (direction) => css`
     letter-spacing: normal;
     background: none;
     border: none;
+  }
+
+  .arrow {
+    margin: 0 12px;
   }
 
   .CardButton-paragraph {

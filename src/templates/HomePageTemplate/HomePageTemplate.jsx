@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { BodyText } from '../../components/BodyText';
-import { CardNavigation } from '../../components/CardNavigation';
 import { DownloadBtn } from '../../components/DownloadBtn';
 import { Hero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
+import { Navigation } from '../../components/Navigation';
 import { Quote } from '../../components/Quote';
 import styles from './HomePageTemplate.styles';
 
@@ -33,12 +33,12 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     graph: { image: graphImage, alt: graphAlt },
     gold: { image: goldImage, alt: goldAlt },
     stat: { image: statImage, alt: statAlt },
+    quoteTextFirst,
+    quoteAuthor,
     cardFirst,
     cardSecond,
     navFirst,
     navSecond,
-    cardBtnTextPrev,
-    cardBtnTextNext,
     cardBtnParagraphPrev,
     cardBtnParagraphNext,
     cardBtnInfoPrev,
@@ -72,35 +72,22 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <Image image={graphImage} alt={graphAlt} />
               <BodyText textFirst={bodyTextTenth} />
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
-              <Quote />
+              <Quote quoteText={quoteTextFirst} quoteAuthor={quoteAuthor} />
               <BodyText textFirst={bodyTextTwelve} />
               <DownloadBtn downloadFile={downloadFile} btnText={btnText} btnIcon={buttonIconWhite} isDark={true} />
             </div>
           </div>
         </div>
-        <div className="cardContent">
-          <div className="cardContent-container">
-            <div className="cardNav">
-              <div className="cardIndent"></div>
-              <CardNavigation
-                cardImage={cardFirst}
-                arrow={navFirst}
-                cardBtnText={cardBtnTextPrev}
-                cardBtnParagraph={cardBtnParagraphPrev}
-                cardBtnInfo={cardBtnInfoPrev}
-                direction={'Previous'}
-              />
-              <CardNavigation
-                cardImage={cardSecond}
-                arrow={navSecond}
-                cardBtnText={cardBtnTextNext}
-                cardBtnParagraph={cardBtnParagraphNext}
-                cardBtnInfo={cardBtnInfoNext}
-                direction={'Next'}
-              />
-            </div>
-          </div>
-        </div>
+        <Navigation
+          cardFirst={cardFirst}
+          cardSecond={cardSecond}
+          navFirst={navFirst}
+          navSecond={navSecond}
+          cardBtnParagraphPrev={cardBtnParagraphPrev}
+          cardBtnParagraphNext={cardBtnParagraphNext}
+          cardBtnInfoPrev={cardBtnInfoPrev}
+          cardBtnInfoNext={cardBtnInfoNext}
+        />
       </div>
     </Layout>
   );

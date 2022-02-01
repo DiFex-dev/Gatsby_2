@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './CardNavigation.styles';
 
-const CardNavigation = ({ cardImage, arrow, cardBtnText, cardBtnParagraph, cardBtnInfo, direction }) => (
+const CardNavigation = ({ cardImage, arrow, cardBtnParagraph, cardBtnInfo, direction }) => (
   <div css={styles(direction)}>
     <div className="card">
       <a href="#" className="cardLink">
@@ -11,8 +11,9 @@ const CardNavigation = ({ cardImage, arrow, cardBtnText, cardBtnParagraph, cardB
         </div>
         <div className="CardButton">
           <button className="CardButton-text">
-            <img src={arrow} alt="left arrow" className="arrow" />
-            {cardBtnText}
+            {direction === 'Previous' && <img src={arrow} alt="left arrow" className="arrow" />}
+            {direction === 'Previous' ? 'Previous' : 'Next'}
+            {direction === 'Next' && <img src={arrow} alt="right arrow" className="arrow" />}
           </button>
           <h3 className="CardButton-paragraph">{cardBtnParagraph}</h3>
           <p className="CardButton-info">{cardBtnInfo}</p>

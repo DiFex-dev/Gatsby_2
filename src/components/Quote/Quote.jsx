@@ -4,25 +4,18 @@ import React from 'react';
 
 import styles from './Quote.styles';
 
-const Quote = () => (
+const Quote = ({ quoteText, quoteAuthor }) => (
   <div css={styles}>
     <div className="quote">
       <SlideIn triggerOnce={true} translateY="0px" translateX="100px">
         <div className="quoteIcon">“</div>
       </SlideIn>
-      <FadeIn triggerOnce={true} duration={'.5s'}>
-        <div className="quote-wrapper">
-          <p className="quoteText">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
-          </p>
-          <p className="quoteAuthor">
-            Author name
-            <br />
-            Designation, Company name
-          </p>
-        </div>
-      </FadeIn>
+      <div className="quote-wrapper">
+        <FadeIn triggerOnce={true} duration={'.5s'}>
+          <p className="quoteText">{quoteText}</p>
+          <p className="quoteAuthor" dangerouslySetInnerHTML={{ __html: quoteAuthor }} />
+        </FadeIn>
+      </div>
     </div>
   </div>
 );
