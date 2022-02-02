@@ -54,7 +54,7 @@ const Layout = ({ children, title, description, image }) => {
         <div className="headAdvImpact-wrapper">
           <HeadAdvImpact sponsors={sponsorsList}/>
         </div>
-        <main>{children}</main>
+        <main className="main">{children}</main>
         <div className="footer-wrapper">
           <FootEconSec />
         </div>

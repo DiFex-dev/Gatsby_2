@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { BodyText } from '../../components/BodyText';
 import { DownloadBtn } from '../../components/DownloadBtn';
@@ -8,6 +8,7 @@ import { Layout } from '../../components/Layout';
 import { Navigation } from '../../components/Navigation';
 import { Quote } from '../../components/Quote';
 import styles from './HomePageTemplate.styles';
+import { Menu } from '../../components/Menu';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
   const { hero, seo, body } = PageData;
@@ -36,6 +37,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     downloadBtn: blackBtn,
     cardNav,
     quoteText,
+    menuIcon,
   } = body;
 
   return (
@@ -45,7 +47,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
         <div className="main-section">
           <div className="mainSection-wrapper">
             <div className="menu-container">
-              <p>MENUfgdsfgfsdgdsfgfdgfdsgfsdgfsgsfdgfdsgfdgfsdgfdgfsdgsfd</p>
+              <Menu menuIcon={menuIcon} />
             </div>
             <div className="content-container">
               <BodyText textFirst={bodyTextFirst} textSecond={bodyTextSecond} />

@@ -7,6 +7,9 @@ const styles = css`
       border-bottom: none;
     }
   }
+  .main{
+    overflow: visible;
+  }
 `;
 
 export default styles;

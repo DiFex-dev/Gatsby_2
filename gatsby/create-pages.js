@@ -88,6 +88,7 @@ const createPages = async ({ actions, graphql }) => {
                 quoteText
                 quoteAuthor
               }
+              menuIcon
             }
             text {
               first
