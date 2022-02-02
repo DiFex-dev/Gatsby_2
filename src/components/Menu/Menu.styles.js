@@ -27,7 +27,6 @@ const styles = css`
     font-weight: normal;
     line-height: normal;
     color: ${colors.grayBlack};
-    text-align: left;
     text-transform: uppercase;
     letter-spacing: 0.36px;
     cursor: pointer;
@@ -71,7 +70,6 @@ const styles = css`
     font-weight: normal;
     line-height: normal;
     color: ${colors.grayBlack};
-    text-align: left;
     letter-spacing: normal;
     cursor: pointer;
 

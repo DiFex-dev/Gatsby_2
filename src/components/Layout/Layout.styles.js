@@ -7,7 +7,8 @@ const styles = css`
       border-bottom: none;
     }
   }
-  .main{
+
+  .main {
     overflow: visible;
   }
 `;

@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { BodyText } from '../../components/BodyText';
 import { DownloadBtn } from '../../components/DownloadBtn';
 import { Hero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
+import { Menu } from '../../components/Menu';
 import { Navigation } from '../../components/Navigation';
 import { Quote } from '../../components/Quote';
 import styles from './HomePageTemplate.styles';
-import { Menu } from '../../components/Menu';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
   const { hero, seo, body } = PageData;
