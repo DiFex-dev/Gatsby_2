@@ -5,6 +5,8 @@ import { DownloadBtn } from '../../components/DownloadBtn';
 import { Hero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
+import { Navigation } from '../../components/Navigation';
+import { Quote } from '../../components/Quote';
 import styles from './HomePageTemplate.styles';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
@@ -31,6 +33,8 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     graph: { image: graphImage, alt: graphAlt },
     gold: { image: goldImage, alt: goldAlt },
     stat: { image: statImage, alt: statAlt },
+    cardNav,
+    quoteText: { quoteTextFirst, quoteAuthor },
   } = body;
 
   return (
@@ -60,16 +64,13 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <Image image={graphImage} alt={graphAlt} />
               <BodyText textFirst={bodyTextTenth} />
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
+              <Quote quoteText={quoteTextFirst} quoteAuthor={quoteAuthor} />
               <BodyText textFirst={bodyTextTwelve} />
               <DownloadBtn downloadFile={downloadFile} btnText={btnText} btnIcon={buttonIconWhite} isDark={true} />
             </div>
           </div>
         </div>
-        <div className="cardContent">
-          <div className="cardContent-container">
-            <div className="cardNav"></div>
-          </div>
-        </div>
+        <Navigation data={cardNav} />
       </div>
     </Layout>
   );

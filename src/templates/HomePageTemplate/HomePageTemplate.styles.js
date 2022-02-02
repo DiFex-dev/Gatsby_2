@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
 import colors from '../../styles/colors';
-import { p2r } from '../../styles/fonts';
+import { p2r, PrimaryProps, SecondaryProps } from '../../styles/fonts';
 
 const styles = css`
   .template-container {
@@ -28,7 +28,7 @@ const styles = css`
   .subtitle {
     margin-top: ${p2r(52)};
     margin-bottom: ${p2r(32)};
-    font-family: Lexia;
+    ${PrimaryProps};
     font-size: ${p2r(32)};
     font-style: normal;
     font-weight: bold;
@@ -47,7 +47,7 @@ const styles = css`
   }
 
   .body-text {
-    font-family: Univers;
+    ${SecondaryProps};
     font-size: ${p2r(18)};
     font-style: normal;
     font-weight: 300;
@@ -59,13 +59,6 @@ const styles = css`
 
   .download-btn {
     margin-top: ${p2r(50)};
-  }
-
-  .cardContent {
-    width: 100%;
-    height: ${p2r(498)};
-    background-color: ${colors.lightGold};
-    box-shadow: inset 0 160px ${colors.white};
   }
 `;
 

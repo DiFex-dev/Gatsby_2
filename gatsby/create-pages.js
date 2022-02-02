@@ -64,6 +64,24 @@ const createPages = async ({ actions, graphql }) => {
                 image
                 alt
               }
+              cardNav {
+                cardPrev {
+                  image
+                  arrow
+                  title
+                  description
+                }
+                cardNext {
+                  image
+                  arrow
+                  title
+                  description
+                }
+              }
+              quoteText {
+                quoteTextFirst
+                quoteAuthor
+              }
             }
             text {
               first
