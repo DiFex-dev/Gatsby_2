@@ -33,8 +33,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     graph: { image: graphImage, alt: graphAlt },
     gold: { image: goldImage, alt: goldAlt },
     stat: { image: statImage, alt: statAlt },
-    cardImg: { cardFirst, cardSecond, navFirst, navSecond },
-    cardText: { cardBtnParagraphPrev, cardBtnParagraphNext, cardBtnInfoPrev, cardBtnInfoNext },
+    cardNav,
     quoteText: { quoteTextFirst, quoteAuthor },
   } = body;
 
@@ -71,16 +70,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
             </div>
           </div>
         </div>
-        <Navigation
-          cardFirst={cardFirst}
-          cardSecond={cardSecond}
-          navFirst={navFirst}
-          navSecond={navSecond}
-          cardBtnParagraphPrev={cardBtnParagraphPrev}
-          cardBtnParagraphNext={cardBtnParagraphNext}
-          cardBtnInfoPrev={cardBtnInfoPrev}
-          cardBtnInfoNext={cardBtnInfoNext}
-        />
+        <Navigation data={cardNav} />
       </div>
     </Layout>
   );

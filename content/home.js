@@ -53,19 +53,21 @@ module.exports = {
       image: '/images/HomePage/StatisticImage.png',
       alt: 'Diagram',
     },
-    cardImg: {
-      cardFirst: '/images/HomePage/CardFirst.png',
-      cardSecond: '/images/HomePage/CardSecond.png',
-      navFirst: '/images/HomePage/NavFirst.svg',
-      navSecond: '/images/HomePage/NavSecond.svg',
-    },
-    cardText: {
-      cardBtnParagraphPrev: 'Gold mid-year outlook 2021',
-      cardBtnParagraphNext: 'Gold Market Commentary',
-      cardBtnInfoPrev:
-        'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-      cardBtnInfoNext:
-        'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
+    cardNav:{
+      cardPrev: {
+        image: '/images/HomePage/CardFirst.png',
+        arrow: '/images/HomePage/NavFirst.svg',
+        title: 'Gold mid-year outlook 2021',
+        description:
+          'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
+      },
+      cardNext: {
+        image: '/images/HomePage/CardSecond.png',
+        arrow: '/images/HomePage/NavSecond.svg',
+        title: 'Gold Market Commentary',
+        description:
+          'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
+      }
     },
     quoteText: {
       quoteTextFirst:
