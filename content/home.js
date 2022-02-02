@@ -7,13 +7,14 @@ module.exports = {
   hero: {
     backgroundImage: '/images/HomePage/HomeBanner.png',
     sponsorLogo: '/images/HomePage/SponsorLogo.svg',
-    buttonIconBlack: '/images/HomePage/Button-iconBlack.svg',
     mobileBackgroundImage: '',
     title: `Gold Demand Trends:<br/>Q2 2021`,
     subtitle: 'Subtitle',
-    btnText: 'Download report',
-    downloadFile: '/images/HomePage/Download.pdf',
-    buttonIconWhite: '/images/HomePage/Button-iconWhite.svg',
+    downloadBtn: {
+      downloadFile: '/images/HomePage/Download.pdf',
+      btnText: 'Download report',
+      btnIcon: '/images/HomePage/Button-iconBlack.svg',
+    },
   },
   body: {
     bodyTextFirst:
@@ -53,7 +54,12 @@ module.exports = {
       image: '/images/HomePage/StatisticImage.png',
       alt: 'Diagram',
     },
-    cardNav:{
+    downloadBtn: {
+      downloadFile: '/images/HomePage/Download.pdf',
+      btnText: 'Download report',
+      btnIcon: '/images/HomePage/Button-iconWhite.svg',
+    },
+    cardNav: {
       cardPrev: {
         image: '/images/HomePage/CardFirst.png',
         arrow: '/images/HomePage/NavFirst.svg',
@@ -67,10 +73,10 @@ module.exports = {
         title: 'Gold Market Commentary',
         description:
           'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-      }
+      },
     },
     quoteText: {
-      quoteTextFirst:
+      quoteText:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.',
       quoteAuthor: `Author name <br/> Designation, Company name`,
     },
