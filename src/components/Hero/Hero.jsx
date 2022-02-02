@@ -5,7 +5,7 @@ import { DownloadBtn } from '../DownloadBtn';
 import { Wrapper } from '../Wrapper';
 import styles from './Hero.styles';
 
-const Hero = ({ title, btnText, logo, background, downloadFile, btnIcon }) => {
+const Hero = ({ title, logo, background, goldBtn }) => {
   const sponsorsList = [
     {
       sponsorLogo: logo,
@@ -26,7 +26,7 @@ const Hero = ({ title, btnText, logo, background, downloadFile, btnIcon }) => {
               <h1 className="title" dangerouslySetInnerHTML={{ __html: title }} />
             </div>
             <div className="image">
-              <DownloadBtn btnText={btnText} downloadFile={downloadFile} btnIcon={btnIcon} isDark={false} />
+              <DownloadBtn data={goldBtn} isDark={false} />
               <img src={background} alt="heroImage" />
             </div>
           </div>

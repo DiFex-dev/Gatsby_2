@@ -27,13 +27,14 @@ const createPages = async ({ actions, graphql }) => {
             hero {
               backgroundImage
               sponsorLogo
-              buttonIconBlack
-              buttonIconWhite
               mobileBackgroundImage
               title
               subtitle
-              btnText
-              downloadFile
+              downloadBtn {
+                downloadFile
+                btnText
+                btnIcon
+              }
             }
             body {
               bodyTextFirst
@@ -64,6 +65,11 @@ const createPages = async ({ actions, graphql }) => {
                 image
                 alt
               }
+              downloadBtn {
+                downloadFile
+                btnText
+                btnIcon
+              }
               cardNav {
                 cardPrev {
                   image
@@ -79,7 +85,7 @@ const createPages = async ({ actions, graphql }) => {
                 }
               }
               quoteText {
-                quoteTextFirst
+                quoteText
                 quoteAuthor
               }
             }

@@ -11,7 +11,7 @@ import styles from './HomePageTemplate.styles';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
   const { hero, seo, body } = PageData;
-  const { title, btnText, sponsorLogo, backgroundImage, downloadFile, buttonIconBlack, buttonIconWhite } = hero;
+  const { title, sponsorLogo, backgroundImage, downloadBtn: goldBtn } = hero;
   const { title: seoTitle, description, image } = seo;
   const {
     bodyTextFirst,
@@ -33,20 +33,14 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     graph: { image: graphImage, alt: graphAlt },
     gold: { image: goldImage, alt: goldAlt },
     stat: { image: statImage, alt: statAlt },
+    downloadBtn: blackBtn,
     cardNav,
-    quoteText: { quoteTextFirst, quoteAuthor },
+    quoteText,
   } = body;
 
   return (
     <Layout title={seoTitle} description={description} image={image}>
-      <Hero
-        title={title}
-        btnText={btnText}
-        logo={sponsorLogo}
-        background={backgroundImage}
-        downloadFile={downloadFile}
-        btnIcon={buttonIconBlack}
-      />
+      <Hero title={title} logo={sponsorLogo} background={backgroundImage} goldBtn={goldBtn} />
       <div css={styles}>
         <div className="main-section">
           <div className="mainSection-wrapper">
@@ -64,9 +58,9 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <Image image={graphImage} alt={graphAlt} />
               <BodyText textFirst={bodyTextTenth} />
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
-              <Quote quoteText={quoteTextFirst} quoteAuthor={quoteAuthor} />
+              <Quote data={quoteText} />
               <BodyText textFirst={bodyTextTwelve} />
-              <DownloadBtn downloadFile={downloadFile} btnText={btnText} btnIcon={buttonIconWhite} isDark={true} />
+              <DownloadBtn data={blackBtn} isDark={true} />
             </div>
           </div>
         </div>
