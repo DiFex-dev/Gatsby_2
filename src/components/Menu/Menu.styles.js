@@ -5,11 +5,11 @@ import { p2r, SecondaryProps } from '../../styles/fonts';
 
 const styles = css`
   position: sticky;
-  top: ${p2r(16)};
+  top: ${p2r(24)};
 
   .menu {
     position: relative;
-    height: 100%;
+    max-height: calc(100vh - 48px);
     overflow: hidden;
     transition: all 0.3s ease;
   }
@@ -71,7 +71,7 @@ const styles = css`
 
   .scrollingMenu {
     width: 340px;
-    height: ${p2r(200)};
+    max-height: calc(100vh - 200px);
     overflow: scroll;
     overflow-x: hidden;
     opacity: 1;
