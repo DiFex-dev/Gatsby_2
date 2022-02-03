@@ -5,7 +5,7 @@ import { p2r, SecondaryProps } from '../../styles/fonts';
 
 const styles = css`
   position: sticky;
-  top: ${p2r(24)};
+  top: 24px;
 
   .menu {
     position: relative;
