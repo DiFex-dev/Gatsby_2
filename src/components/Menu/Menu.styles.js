@@ -5,11 +5,13 @@ import { p2r, SecondaryProps } from '../../styles/fonts';
 
 const styles = css`
   position: sticky;
-  top: 16px;
+  top: 24px;
 
   .menu {
     position: relative;
+    max-height: calc(100vh - 48px);
     overflow: hidden;
+    transition: all 0.3s ease;
   }
 
   .open-button {
@@ -33,6 +35,7 @@ const styles = css`
     background-color: ${colors.grayGold};
     border: none;
     border-radius: 32px 32px 0 0;
+    transition: border-radius 0.3s ease;
 
     &:hover {
       padding: 0 26px 0 30px;
@@ -43,14 +46,36 @@ const styles = css`
 
   .closed {
     height: ${p2r(64)};
+    transition: all 0.3s ease;
 
     & > .open-button {
       border-radius: 32px;
+      transition: border-radius 0.3s ease;
     }
 
     & > .menu-list {
       padding-top: 0;
+      transition: all 0.3s ease;
     }
+
+    & > .scrollingMenu {
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    & > .smallBtn-wrapper {
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .scrollingMenu {
+    width: 340px;
+    max-height: calc(100vh - 200px);
+    overflow: scroll;
+    overflow-x: hidden;
+    opacity: 1;
+    transition: all 0.3s ease;
   }
 
   .menu-list {
@@ -62,7 +87,7 @@ const styles = css`
     margin: 0;
     list-style: none;
     background-color: ${colors.paleLightGold};
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
   }
 
   .border {
@@ -96,11 +121,13 @@ const styles = css`
   .article-name {
     font-size: ${p2r(18)};
     font-weight: normal;
+    background-color: ${colors.paleLightGold};
   }
 
   .article-info {
     font-size: ${p2r(14)};
     font-weight: 300;
+    background-color: ${colors.paleLightGold};
   }
 
   .smallBtn-wrapper {
@@ -109,6 +136,8 @@ const styles = css`
     width: 320px;
     background-color: ${colors.paleLightGold};
     border-radius: 0 0 32px 32px;
+    opacity: 1;
+    transition: all 0.3s ease;
   }
 
   .smallOpen-button {
