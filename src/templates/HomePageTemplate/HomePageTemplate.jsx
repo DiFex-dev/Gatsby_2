@@ -5,6 +5,7 @@ import { DownloadBtn } from '../../components/DownloadBtn';
 import { Hero } from '../../components/Hero';
 import { Image } from '../../components/Image';
 import { Layout } from '../../components/Layout';
+import { Menu } from '../../components/Menu';
 import { Navigation } from '../../components/Navigation';
 import { Quote } from '../../components/Quote';
 import styles from './HomePageTemplate.styles';
@@ -36,6 +37,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     downloadBtn: blackBtn,
     cardNav,
     quoteText,
+    menu,
   } = body;
 
   return (
@@ -45,7 +47,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
         <div className="main-section">
           <div className="mainSection-wrapper">
             <div className="menu-container">
-              <p>MENUfgdsfgfsdgdsfgfdgfdsgfsdgfsgsfdgfdsgfdgfsdgfdgfsdgsfd</p>
+              <Menu data={menu} />
             </div>
             <div className="content-container">
               <BodyText textFirst={bodyTextFirst} textSecond={bodyTextSecond} />

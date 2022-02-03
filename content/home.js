@@ -80,6 +80,15 @@ module.exports = {
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.',
       quoteAuthor: `Author name <br/> Designation, Company name`,
     },
+    menu: {
+      btnIcon: '/images/HomePage/Menu-Icon.png',
+      btnText: 'Articles index',
+      linkTextFirst: 'Gold mid-year outlook 2021',
+      linkTextSecond: 'Gold Demand Trends Q2 2021',
+      linkTextThird: 'Gold Market Commentary',
+      articleName: 'Article X',
+      articleInfo: 'available on DD/MM/YYYY',
+    },
   },
   text: {
     first: 'First text',

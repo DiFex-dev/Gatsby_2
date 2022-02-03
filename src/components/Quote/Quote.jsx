@@ -6,7 +6,7 @@ import styles from './Quote.styles';
 
 const Quote = ({ data }) => {
   const { quoteText, quoteAuthor } = data;
-  console.log(data)
+
   return (
     <div css={styles}>
       <div className="quote">

@@ -52,9 +52,9 @@ const Layout = ({ children, title, description, image }) => {
           <HeadImpact HorizontalRule={false} />
         </div>
         <div className="headAdvImpact-wrapper">
-          <HeadAdvImpact sponsors={sponsorsList}/>
+          <HeadAdvImpact sponsors={sponsorsList} />
         </div>
-        <main>{children}</main>
+        <main className="main">{children}</main>
         <div className="footer-wrapper">
           <FootEconSec />
         </div>
