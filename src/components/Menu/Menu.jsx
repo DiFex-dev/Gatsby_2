@@ -13,59 +13,61 @@ const Menu = ({ data }) => {
           {btnText}
           <img src={btnIcon} className={`arrow ${isOpen ? '' : 'down-arrow'}`} />
         </button>
-        <ul className="menu-list">
-          <li className="menu-item">
-            <a className="menu-link">{linkTextFirst}</a>
-          </li>
-          <li className="menu-item">
-            <a className="menu-link">{linkTextSecond}</a>
-          </li>
-          <li className="menu-item border">
-            <a className="menu-link">{linkTextThird}</a>
-          </li>
-        </ul>
-        <ul className="menu-list">
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-          <li className="menu-article">
-            <p className="article-name">{articleName}</p>
-            <p className="article-info">{articleInfo}</p>
-          </li>
-        </ul>
+        <div className="scrollingMenu">
+          <ul className="menu-list">
+            <li className="menu-item">
+              <a className="menu-link">{linkTextFirst}</a>
+            </li>
+            <li className="menu-item">
+              <a className="menu-link">{linkTextSecond}</a>
+            </li>
+            <li className="menu-item border">
+              <a className="menu-link">{linkTextThird}</a>
+            </li>
+          </ul>
+          <ul className="menu-list">
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+            <li className="menu-article">
+              <p className="article-name">{articleName}</p>
+              <p className="article-info">{articleInfo}</p>
+            </li>
+          </ul>
+        </div>
         <div className="smallBtn-wrapper">
           <button className="smallOpen-button" onClick={() => setOpen(!isOpen)}>
             <img src={btnIcon} className={`arrow ${isOpen ? '' : 'down-arrow'}`} />

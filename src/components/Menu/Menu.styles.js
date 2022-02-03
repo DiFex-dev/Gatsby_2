@@ -5,7 +5,7 @@ import { p2r, SecondaryProps } from '../../styles/fonts';
 
 const styles = css`
   position: sticky;
-  top: 16px;
+  top: ${p2r(16)};
 
   .menu {
     position: relative;
@@ -45,7 +45,7 @@ const styles = css`
   }
 
   .closed {
-    height: 64px;
+    height: ${p2r(64)};
     transition: all 0.3s ease;
 
     & > .open-button {
@@ -55,6 +55,10 @@ const styles = css`
 
     & > .menu-list {
       padding-top: 0;
+      transition: all 0.3s ease;
+    }
+
+    & > .scrollingMenu {
       opacity: 0;
       transition: all 0.3s ease;
     }
@@ -65,17 +69,24 @@ const styles = css`
     }
   }
 
+  .scrollingMenu {
+    width: 340px;
+    height: ${p2r(200)};
+    overflow: scroll;
+    overflow-x: hidden;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
   .menu-list {
     display: flex;
     flex-direction: column;
     gap: ${p2r(26)};
     width: 320px;
-    height: 100%;
     padding: ${p2r(33)} 40px 0 32px;
     margin: 0;
     list-style: none;
     background-color: ${colors.paleLightGold};
-    opacity: 1;
     transition: all 0.3s ease;
   }
 
