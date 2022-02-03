@@ -22,7 +22,7 @@ const styles = css`
     height: ${p2r(64)};
     padding: 0 28px 0 32px;
     ${SecondaryProps};
-    font-size: ${p2r(22)};
+    font-size: ${p2r(20)};
     font-style: normal;
     font-weight: normal;
     line-height: normal;
@@ -31,9 +31,11 @@ const styles = css`
     letter-spacing: 0.36px;
     cursor: pointer;
     background-color: ${colors.grayGold};
+    border: none;
     border-radius: 32px 32px 0 0;
 
     &:hover {
+      padding: 0 26px 0 30px;
       background-color: ${colors.white};
       border: 2px solid ${colors.grayGold};
     }
@@ -56,16 +58,22 @@ const styles = css`
     flex-direction: column;
     gap: ${p2r(26)};
     width: 320px;
-    padding: ${p2r(33)} 40px ${p2r(33)} 32px;
+    padding: ${p2r(33)} 40px 0 32px;
     margin: 0;
     list-style: none;
     background-color: ${colors.paleLightGold};
     transition: all 0.2s ease;
   }
 
+  .border {
+    padding-bottom: ${p2r(33)};
+    border-bottom: 2px solid ${colors.grayGold};
+  }
+
   .menu-item {
+    width: 225px;
     ${SecondaryProps};
-    font-size: ${p2r(22)};
+    font-size: ${p2r(18)};
     font-style: normal;
     font-weight: normal;
     line-height: normal;
@@ -76,6 +84,23 @@ const styles = css`
     &:hover {
       color: ${colors.grayGold};
     }
+  }
+
+  .menu-article {
+    ${SecondaryProps};
+    font-style: normal;
+    line-height: ${p2r(18)};
+    letter-spacing: normal;
+  }
+
+  .article-name {
+    font-size: ${p2r(18)};
+    font-weight: normal;
+  }
+
+  .article-info {
+    font-size: ${p2r(14)};
+    font-weight: 300;
   }
 
   .smallBtn-wrapper {
@@ -92,6 +117,7 @@ const styles = css`
     justify-content: center;
     width: 64px;
     height: ${p2r(64)};
+    margin-top: ${p2r(17)};
     cursor: pointer;
     background-color: ${colors.grayGold};
     border: none;

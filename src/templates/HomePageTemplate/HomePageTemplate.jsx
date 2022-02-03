@@ -37,7 +37,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     downloadBtn: blackBtn,
     cardNav,
     quoteText,
-    menuIcon,
+    menu,
   } = body;
 
   return (
@@ -47,7 +47,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
         <div className="main-section">
           <div className="mainSection-wrapper">
             <div className="menu-container">
-              <Menu menuIcon={menuIcon} />
+              <Menu data={menu} />
             </div>
             <div className="content-container">
               <BodyText textFirst={bodyTextFirst} textSecond={bodyTextSecond} />
