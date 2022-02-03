@@ -9,7 +9,9 @@ const styles = css`
 
   .menu {
     position: relative;
+    height: 100%;
     overflow: hidden;
+    transition: all 0.3s ease;
   }
 
   .open-button {
@@ -33,6 +35,7 @@ const styles = css`
     background-color: ${colors.grayGold};
     border: none;
     border-radius: 32px 32px 0 0;
+    transition: border-radius 0.3s ease;
 
     &:hover {
       padding: 0 26px 0 30px;
@@ -42,14 +45,23 @@ const styles = css`
   }
 
   .closed {
-    height: ${p2r(64)};
+    height: 64px;
+    transition: all 0.3s ease;
 
     & > .open-button {
       border-radius: 32px;
+      transition: border-radius 0.3s ease;
     }
 
     & > .menu-list {
       padding-top: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    & > .smallBtn-wrapper {
+      opacity: 0;
+      transition: all 0.3s ease;
     }
   }
 
@@ -58,11 +70,13 @@ const styles = css`
     flex-direction: column;
     gap: ${p2r(26)};
     width: 320px;
+    height: 100%;
     padding: ${p2r(33)} 40px 0 32px;
     margin: 0;
     list-style: none;
     background-color: ${colors.paleLightGold};
-    transition: all 0.2s ease;
+    opacity: 1;
+    transition: all 0.3s ease;
   }
 
   .border {
@@ -96,11 +110,13 @@ const styles = css`
   .article-name {
     font-size: ${p2r(18)};
     font-weight: normal;
+    background-color: ${colors.paleLightGold};
   }
 
   .article-info {
     font-size: ${p2r(14)};
     font-weight: 300;
+    background-color: ${colors.paleLightGold};
   }
 
   .smallBtn-wrapper {
@@ -109,6 +125,8 @@ const styles = css`
     width: 320px;
     background-color: ${colors.paleLightGold};
     border-radius: 0 0 32px 32px;
+    opacity: 1;
+    transition: all 0.3s ease;
   }
 
   .smallOpen-button {
