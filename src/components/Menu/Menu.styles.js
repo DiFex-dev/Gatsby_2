@@ -9,8 +9,8 @@ const styles = css`
 
   .menu {
     position: relative;
-    max-height: calc(100vh - 48px);
     overflow: hidden;
+    max-height: calc(100vh - 48px);
     transition: all 0.3s ease;
   }
 
@@ -70,11 +70,12 @@ const styles = css`
   }
 
   .scrollingMenu {
-    width: 340px;
+    max-width: 320px;
     max-height: calc(100vh - 200px);
     overflow: scroll;
     overflow-x: hidden;
     opacity: 1;
+    background-color: ${colors.paleLightGold};
     transition: all 0.3s ease;
   }
 
@@ -86,7 +87,6 @@ const styles = css`
     padding: ${p2r(33)} 40px 0 32px;
     margin: 0;
     list-style: none;
-    background-color: ${colors.paleLightGold};
     transition: all 0.3s ease;
   }
 
@@ -121,13 +121,11 @@ const styles = css`
   .article-name {
     font-size: ${p2r(18)};
     font-weight: normal;
-    background-color: ${colors.paleLightGold};
   }
 
   .article-info {
     font-size: ${p2r(14)};
     font-weight: 300;
-    background-color: ${colors.paleLightGold};
   }
 
   .smallBtn-wrapper {

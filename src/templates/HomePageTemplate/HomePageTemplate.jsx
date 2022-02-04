@@ -36,6 +36,8 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     stat: { image: statImage, alt: statAlt },
     downloadBtn: blackBtn,
     cardNav,
+    mobileArrowFirst,
+    mobileArrowSecond,
     quoteText,
     menu,
   } = body;
@@ -62,11 +64,13 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
               <Quote data={quoteText} />
               <BodyText textFirst={bodyTextTwelve} />
-              <DownloadBtn data={blackBtn} isDark={true} />
+              <div className="btn-dark">
+                <DownloadBtn data={blackBtn} isDark={true} />
+              </div>
             </div>
           </div>
         </div>
-        <Navigation data={cardNav} />
+        <Navigation data={cardNav} mobileArrowFirst={mobileArrowFirst} mobileArrowSecond={mobileArrowSecond} />
       </div>
     </Layout>
   );

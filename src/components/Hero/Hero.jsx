@@ -27,7 +27,7 @@ const Hero = ({ title, logo, background, goldBtn }) => {
             </div>
             <div className="image">
               <DownloadBtn data={goldBtn} isDark={false} />
-              <img src={background} alt="heroImage" />
+              <img src={background} alt="goldImage" className="heroImage" />
             </div>
           </div>
         </div>

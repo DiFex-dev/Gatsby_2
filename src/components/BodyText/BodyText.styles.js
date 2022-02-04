@@ -1,12 +1,15 @@
-import {css} from '@emotion/react'
+import { css } from '@emotion/react';
 
-import {colors} from '../../styles';
-import {p2r, PrimaryProps, SecondaryProps} from '../../styles/fonts';
+import { breakpoints, colors } from '../../styles';
+import { p2r, PrimaryProps, SecondaryProps } from '../../styles/fonts';
 
 const style = css`
+  @media (max-width: ${breakpoints.smallTablet}px) {
+    padding: 0 16px;
+  }
+
   .subtitle {
-    margin-top: ${p2r(52)};
-    margin-bottom: ${p2r(32)};
+    margin: ${p2r(50)} 0 ${p2r(30)};
     ${PrimaryProps};
     font-size: ${p2r(32)};
     font-style: normal;
@@ -15,6 +18,11 @@ const style = css`
     color: ${colors.grayBlack};
     text-align: left;
     letter-spacing: normal;
+
+    @media (max-width: ${breakpoints.smallTablet}px) {
+      font-size: ${p2r(24)};
+      margin: ${p2r(30)} 0 ${p2r(14)};
+    }
   }
 
   .body-text {
@@ -26,10 +34,14 @@ const style = css`
     color: ${colors.grayBlack};
     text-align: left;
     letter-spacing: normal;
+
+    @media (max-width: ${breakpoints.smallTablet}px) {
+      font-size: ${p2r(16)};
+    }
   }
 
   .second {
-    margin-top: ${p2r(30)};
+    margin-top: ${p2r(25)};
   }
 `;
 

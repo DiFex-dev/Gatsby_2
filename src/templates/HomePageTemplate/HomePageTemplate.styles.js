@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 
+import {breakpoints} from '../../styles';
 import colors from '../../styles/colors';
 import { p2r, PrimaryProps, SecondaryProps } from '../../styles/fonts';
 
@@ -8,21 +9,37 @@ const styles = css`
     position: relative;
   }
 
+  .main-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   .mainSection-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 1440px;
     margin-top: ${p2r(50)};
+    padding: 0 32px;
+
+    @media (max-width: ${breakpoints.smallTablet}px) {
+      padding: 0;
+      & > .menu-container {
+        display: none;
+      }
+  }
   }
 
   .menu-container {
-    width: 320px;
-    margin-right: 112px;
+    height: 100%;
+    padding-right: 102px;
   }
 
   .content-container {
-    width: 800px;
-    margin-right: 210px;
+    max-width: 800px;
   }
 
   .subtitle {
@@ -57,8 +74,12 @@ const styles = css`
     letter-spacing: normal;
   }
 
-  .download-btn {
+  .btn-dark {
     margin-top: ${p2r(50)};
+
+    @media (max-width: ${breakpoints.smallTablet}px) {
+      margin-top: ${p2r(50)};
+    }
   }
 `;
 
