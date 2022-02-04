@@ -84,6 +84,8 @@ const createPages = async ({ actions, graphql }) => {
                   description
                 }
               }
+              mobileArrowFirst
+              mobileArrowSecond
               quoteText {
                 quoteText
                 quoteAuthor

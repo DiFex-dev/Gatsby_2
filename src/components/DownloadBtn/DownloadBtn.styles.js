@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import { colors } from '../../styles';
+import { breakpoints, colors } from '../../styles';
 import { p2r } from '../../styles/fonts';
 
 const light = {
@@ -38,6 +38,12 @@ const styles = (isDark) => css`
     &:hover {
       background: ${isDark ? dark.hover : light.hover};
       border: ${isDark ? dark.border : light.border};
+    }
+
+    @media (max-width: ${breakpoints.smallTablet}px) {
+      width: 100%;
+      max-width: 343px;
+      margin: 0 auto;
     }
   }
 `;

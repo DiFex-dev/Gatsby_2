@@ -6,6 +6,7 @@ import { p2r, PrimaryProps, SecondaryProps } from '../../styles/fonts';
 const styles = css`
   .quote {
     margin: ${p2r(87)} 0 ${p2r(33)};
+    width: 100%;
   }
 
   .quoteIcon {
@@ -32,8 +33,7 @@ const styles = css`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 800px;
-    height: ${p2r(292)};
+    width: 100%;
     padding: ${p2r(30)} 30px;
     background: ${colors.paleLightGold};
   }

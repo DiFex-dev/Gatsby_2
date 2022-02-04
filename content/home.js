@@ -62,19 +62,21 @@ module.exports = {
     cardNav: {
       cardPrev: {
         image: '/images/HomePage/CardFirst.png',
-        arrow: '/images/HomePage/NavFirst.svg',
+        arrow: '/images/HomePage/NavFirst.png',
         title: 'Gold mid-year outlook 2021',
         description:
           'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
       },
       cardNext: {
         image: '/images/HomePage/CardSecond.png',
-        arrow: '/images/HomePage/NavSecond.svg',
+        arrow: '/images/HomePage/NavSecond.png',
         title: 'Gold Market Commentary',
         description:
           'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
       },
     },
+    mobileArrowFirst: '/images/HomePage/MobileNavFirst.svg',
+    mobileArrowSecond: '/images/HomePage/MobileNavSecond.svg',
     quoteText: {
       quoteText:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.',

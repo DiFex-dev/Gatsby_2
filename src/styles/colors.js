@@ -7,4 +7,5 @@ export default {
   lightGold: '#E2DDCE',
   paleLightGold: '#F1EFE7',
   darkGold: '#C9BE8B',
+  paleBlack: '#666666',
 };
