@@ -7,7 +7,7 @@ const CardNavigation = ({ data, direction }) => {
 
   return (
     <div css={styles(direction)}>
-      <a href="#" className="cardLink">
+      <a href="/gold-demand-trends/" className="cardLink">
         <div className="cardImage-container">
           <img src={image} alt="compass" className="cardImage" />
         </div>
