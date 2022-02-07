@@ -90,12 +90,18 @@ module.exports = {
     menu: {
       btnIcon: '/images/HomePage/Menu-Icon.png',
       btnText: 'Articles index',
-      linkTextFirst: 'Gold mid-year outlook 2021',
-      linkTextSecond: 'Gold Demand Trends Q2 2021',
-      linkTextThird: `<u>Gold Market Commentary</u>`,
-      linkFirst: '/gold-demand-trends/',
-      linkSecond: '/',
-      linkThird: '/gold-market-commentary/',
+      linkFirst: {
+        text: 'Gold mid-year outlook 2021',
+        link: '/gold-demand-trends/',
+      },
+      linkSecond: {
+        text: 'Gold Demand Trends Q2 2021',
+        link: '/',
+      },
+      linkThird: {
+        text: `<u>Gold Market Commentary</u>`,
+        link: '/gold-market-commentary/',
+      },
       articleName: 'Article X',
       articleInfo: 'available on DD/MM/YYYY',
     },

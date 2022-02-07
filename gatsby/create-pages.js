@@ -98,12 +98,18 @@ const createPages = async ({ actions, graphql }) => {
               menu {
                 btnIcon
                 btnText
-                linkTextFirst
-                linkTextSecond
-                linkTextThird
-                linkFirst
-                linkSecond
-                linkThird
+                linkFirst {
+                  text
+                  link
+                }
+                linkSecond {
+                  text
+                  link
+                }
+                linkThird {
+                  text
+                  link
+                }
                 articleName
                 articleInfo
               }
@@ -192,12 +198,18 @@ const createPages = async ({ actions, graphql }) => {
               menu {
                 btnIcon
                 btnText
-                linkTextFirst
-                linkTextSecond
-                linkTextThird
-                linkFirst
-                linkSecond
-                linkThird
+                linkFirst {
+                  text
+                  link
+                }
+                linkSecond {
+                  text
+                  link
+                }
+                linkThird {
+                  text
+                  link
+                }
                 articleName
                 articleInfo
               }
@@ -286,12 +298,18 @@ const createPages = async ({ actions, graphql }) => {
               menu {
                 btnIcon
                 btnText
-                linkTextFirst
-                linkTextSecond
-                linkTextThird
-                linkFirst
-                linkSecond
-                linkThird
+                linkFirst {
+                  text
+                  link
+                }
+                linkSecond {
+                  text
+                  link
+                }
+                linkThird {
+                  text
+                  link
+                }
                 articleName
                 articleInfo
               }

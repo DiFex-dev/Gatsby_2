@@ -4,18 +4,7 @@ import React, { useState } from 'react';
 import styles from './Menu.styles';
 
 const Menu = ({ data }) => {
-  const {
-    btnIcon,
-    btnText,
-    linkTextFirst,
-    linkTextSecond,
-    linkTextThird,
-    linkFirst,
-    linkSecond,
-    linkThird,
-    articleName,
-    articleInfo,
-  } = data;
+  const { btnIcon, btnText, linkFirst, linkSecond, linkThird, articleName, articleInfo } = data;
   const [isOpen, setOpen] = useState(true);
 
   return (
@@ -28,13 +17,13 @@ const Menu = ({ data }) => {
         <div className="scrollingMenu">
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to={linkFirst} className="menu-link" dangerouslySetInnerHTML={{ __html: linkTextFirst }} />
+              <Link to={linkFirst.link} className="menu-link" dangerouslySetInnerHTML={{ __html: linkFirst.text }} />
             </li>
             <li className="menu-item">
-              <Link to={linkSecond} className="menu-link" dangerouslySetInnerHTML={{ __html: linkTextSecond }} />
+              <Link to={linkSecond.link} className="menu-link" dangerouslySetInnerHTML={{ __html: linkSecond.text }} />
             </li>
             <li className="menu-item border">
-              <Link to={linkThird} className="menu-link" dangerouslySetInnerHTML={{ __html: linkTextThird }} />
+              <Link to={linkThird.link} className="menu-link" dangerouslySetInnerHTML={{ __html: linkThird.text }} />
             </li>
           </ul>
           <ul className="menu-list">
