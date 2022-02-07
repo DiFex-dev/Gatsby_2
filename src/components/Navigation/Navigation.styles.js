@@ -20,8 +20,8 @@ const styles = css`
   .cardContent-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     gap: 10px;
+    justify-content: flex-start;
     width: 100%;
     max-width: 1440px;
     padding: ${p2r(0)} 32px;
@@ -44,8 +44,8 @@ const styles = css`
 
   .cardNav {
     display: flex;
-    justify-content: space-between;
     gap: 40px;
+    justify-content: space-between;
     width: 100%;
 
     @media (max-width: ${breakpoints.smallTablet}px) {
@@ -83,11 +83,13 @@ const styles = css`
     justify-content: space-between;
     width: 138px;
     height: ${p2r(64)};
-    border-radius: 40px;
-    background-color: ${colors.grayGold};
     ${SecondaryProps};
     font-size: ${p2r(18)};
+    color: ${colors.grayBlack};
+    text-decoration: none;
     letter-spacing: 0.36px;
+    background-color: ${colors.grayGold};
+    border-radius: 40px;
   }
 
   .prev {
@@ -102,17 +104,17 @@ const styles = css`
 
   .mobile-pages {
     display: flex;
+    gap: 15px;
     align-items: center;
     justify-content: center;
-    gap: 15px;
     margin: ${p2r(64)} 0 ${p2r(80)};
   }
 
   .page-button {
-    color: ${colors.paleBlack};
     ${SecondaryProps};
-    font-size: ${p2r(18)};
-    font-weight: 300;
+    font-size: ${p2r(22)};
+    color: ${colors.paleBlack};
+    text-decoration: none;
   }
 
   .page-delimiter {

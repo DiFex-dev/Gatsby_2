@@ -76,16 +76,21 @@ const createPages = async ({ actions, graphql }) => {
                   arrow
                   title
                   description
+                  link
                 }
                 cardNext {
                   image
                   arrow
                   title
                   description
+                  link
                 }
               }
               mobileArrowFirst
               mobileArrowSecond
+              firstPage
+              secondPage
+              thirdPage
               quoteText {
                 quoteText
                 quoteAuthor
@@ -96,6 +101,9 @@ const createPages = async ({ actions, graphql }) => {
                 linkTextFirst
                 linkTextSecond
                 linkTextThird
+                linkFirst
+                linkSecond
+                linkThird
                 articleName
                 articleInfo
               }
@@ -162,16 +170,21 @@ const createPages = async ({ actions, graphql }) => {
                   arrow
                   title
                   description
+                  link
                 }
                 cardNext {
                   image
                   arrow
                   title
                   description
+                  link
                 }
               }
               mobileArrowFirst
               mobileArrowSecond
+              firstPage
+              secondPage
+              thirdPage
               quoteText {
                 quoteText
                 quoteAuthor
@@ -182,6 +195,9 @@ const createPages = async ({ actions, graphql }) => {
                 linkTextFirst
                 linkTextSecond
                 linkTextThird
+                linkFirst
+                linkSecond
+                linkThird
                 articleName
                 articleInfo
               }
@@ -248,16 +264,21 @@ const createPages = async ({ actions, graphql }) => {
                   arrow
                   title
                   description
+                  link
                 }
                 cardNext {
                   image
                   arrow
                   title
                   description
+                  link
                 }
               }
               mobileArrowFirst
               mobileArrowSecond
+              firstPage
+              secondPage
+              thirdPage
               quoteText {
                 quoteText
                 quoteAuthor
@@ -268,6 +289,9 @@ const createPages = async ({ actions, graphql }) => {
                 linkTextFirst
                 linkTextSecond
                 linkTextThird
+                linkFirst
+                linkSecond
+                linkThird
                 articleName
                 articleInfo
               }
@@ -283,21 +307,21 @@ const createPages = async ({ actions, graphql }) => {
 
   createPage({
     path: '/',
-    component: path.resolve('./src/templates/HomePageTemplate/HomePageTemplate.jsx'),
+    component: path.resolve('./src/templates/ArticlePageTemplate/ArticlePageTemplate.jsx'),
     context: {
       PageData: homePage,
     },
   });
   createPage({
     path: '/gold-demand-trends/',
-    component: path.resolve('./src/templates/HomePageTemplate/HomePageTemplate.jsx'),
+    component: path.resolve('./src/templates/ArticlePageTemplate/ArticlePageTemplate.jsx'),
     context: {
       PageData: secondPage,
     },
   });
   createPage({
     path: '/gold-market-commentary/',
-    component: path.resolve('./src/templates/HomePageTemplate/HomePageTemplate.jsx'),
+    component: path.resolve('./src/templates/ArticlePageTemplate/ArticlePageTemplate.jsx'),
     context: {
       PageData: thirdPage,
     },

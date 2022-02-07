@@ -20,7 +20,7 @@
 1. Update @economist/fabric-components package to the latest version
 2. Delete image from PreloadStatic component and add yours images if it's necessary.
 3. Delete fonts which you don't use on the project (exception: EcoSansOS is default font for Economist Fabric Components).
-4. Delete components which you don't need from HomePageTemplate, they are used as an example
+4. Delete components which you don't need from ArticlePageTemplate, they are used as an example
 5. Delete property which you don't need for home page from home.js, create-pages.js and use-site-metadata.js files
 6. Delete HomeBanner.png img from static/images/HomePage folder
 7. Change id at gatsby-config for google tagmanager

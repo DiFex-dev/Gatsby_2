@@ -66,6 +66,7 @@ module.exports = {
         title: 'Gold mid-year outlook 2021',
         description:
           'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
+        link: '/gold-demand-trends/',
       },
       cardNext: {
         image: '/images/HomePage/CardSecond.png',
@@ -73,10 +74,14 @@ module.exports = {
         title: 'Gold Market Commentary',
         description:
           'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
+        link: '/gold-market-commentary/',
       },
     },
     mobileArrowFirst: '/images/HomePage/MobileNavFirst.svg',
     mobileArrowSecond: '/images/HomePage/MobileNavSecond.svg',
+    firstPage: `1`,
+    secondPage: `<b>2</b>`,
+    thirdPage: `3`,
     quoteText: {
       quoteText:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.',
@@ -86,8 +91,11 @@ module.exports = {
       btnIcon: '/images/HomePage/Menu-Icon.png',
       btnText: 'Articles index',
       linkTextFirst: 'Gold mid-year outlook 2021',
-      linkTextSecond: 'Gold Demand Trends Q2 2021',
+      linkTextSecond: `<u>Gold Demand Trends Q2 2021</u>`,
       linkTextThird: 'Gold Market Commentary',
+      linkFirst: '/gold-demand-trends/',
+      linkSecond: '/',
+      linkThird: '/gold-market-commentary/',
       articleName: 'Article X',
       articleInfo: 'available on DD/MM/YYYY',
     },
