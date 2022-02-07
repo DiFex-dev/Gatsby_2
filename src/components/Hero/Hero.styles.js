@@ -23,14 +23,14 @@ const styles = css`
 
   .title-icon {
     display: flex;
-    justify-content: flex-end;
     flex: 0 1 340px;
+    justify-content: flex-end;
     margin-right: 80px;
   }
 
   .title {
-    margin-top: ${p2r(4)};
     width: 70%;
+    margin-top: ${p2r(4)};
     font-family: Lexia;
     font-size: ${p2r(42)};
     font-style: italic;
@@ -45,9 +45,9 @@ const styles = css`
     left: 340px;
 
     @media (max-width: ${breakpoints.smallTablet}px) {
+      left: 0;
       width: 100%;
       max-width: 343px;
-      left: 0;
     }
   }
 

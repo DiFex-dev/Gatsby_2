@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import {breakpoints} from '../../styles';
+import { breakpoints } from '../../styles';
 import colors from '../../styles/colors';
 import { p2r, PrimaryProps, SecondaryProps } from '../../styles/fonts';
 
@@ -18,19 +18,19 @@ const styles = css`
   .mainSection-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     gap: 10px;
+    justify-content: flex-start;
     width: 100%;
     max-width: 1440px;
-    margin-top: ${p2r(50)};
     padding: 0 32px;
+    margin-top: ${p2r(50)};
 
     @media (max-width: ${breakpoints.smallTablet}px) {
       padding: 0;
       & > .menu-container {
         display: none;
       }
-  }
+    }
   }
 
   .menu-container {

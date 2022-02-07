@@ -4,11 +4,11 @@ import { colors } from '../../styles';
 import { p2r, PrimaryProps, SecondaryProps } from '../../styles/fonts';
 
 const styles = (direction) => css`
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
+  margin-bottom: ${p2r(107)};
   cursor: pointer;
   background: ${colors.grayBlack};
-  margin-bottom: ${p2r(107)};
 
   &:hover {
     .cardImage {

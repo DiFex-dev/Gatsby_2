@@ -1,11 +1,13 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 import { CardNavigation } from '../CardNavigation';
 import styles from './Navigation.styles';
 
-const Navigation = ({ data, mobileArrowFirst, mobileArrowSecond }) => {
+const Navigation = ({ data, mobileArrowFirst, mobileArrowSecond, firstPage, secondPage, thirdPage }) => {
   const { cardPrev, cardNext } = data;
-
+  const { link: linkPrev } = cardPrev;
+  const { link: linkNext } = cardNext;
   return (
     <div css={styles}>
       <div className="cardContent">
@@ -18,21 +20,29 @@ const Navigation = ({ data, mobileArrowFirst, mobileArrowSecond }) => {
             </div>
             <div className="cardNav-mobile">
               <div className="mobile-allBtn">
-                <a className="mobile-btn prev">
+                <Link to={linkPrev} className="mobile-btn prev">
                   <img src={mobileArrowFirst} alt="left mob-arrow" />
                   PREV.
-                </a>
-                <a className="mobile-btn next">
+                </Link>
+                <Link to={linkNext} className="mobile-btn next">
                   NEXT
                   <img src={mobileArrowSecond} alt="right mob-arrow" />
-                </a>
+                </Link>
               </div>
               <div className="mobile-pages">
-                <a className="page-button">1</a>
+                <Link
+                  to="/gold-demand-trends/"
+                  className="page-button"
+                  dangerouslySetInnerHTML={{ __html: firstPage }}
+                />
                 <div className="page-delimiter" />
-                <a className="page-button">2</a>
+                <Link to="/" className="page-button" dangerouslySetInnerHTML={{ __html: secondPage }} />
                 <div className="page-delimiter" />
-                <a className="page-button">3</a>
+                <Link
+                  to="/gold-market-commentary/"
+                  className="page-button"
+                  dangerouslySetInnerHTML={{ __html: thirdPage }}
+                />
               </div>
             </div>
           </div>

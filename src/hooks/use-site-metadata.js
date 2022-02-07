@@ -25,6 +25,38 @@ const useSiteMetadata = () => {
                 first
               }
             }
+            secondPage {
+              seo {
+                title
+                description
+                image
+              }
+              hero {
+                backgroundImage
+                mobileBackgroundImage
+                title
+                subtitle
+              }
+              text {
+                first
+              }
+            }
+            thirdPage {
+              seo {
+                title
+                description
+                image
+              }
+              hero {
+                backgroundImage
+                mobileBackgroundImage
+                title
+                subtitle
+              }
+              text {
+                first
+              }
+            }
           }
         }
       }

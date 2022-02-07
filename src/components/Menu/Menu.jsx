@@ -1,9 +1,10 @@
+import { Link } from 'gatsby';
 import React, { useState } from 'react';
 
 import styles from './Menu.styles';
 
 const Menu = ({ data }) => {
-  const { btnIcon, btnText, linkTextFirst, linkTextSecond, linkTextThird, articleName, articleInfo } = data;
+  const { btnIcon, btnText, linkFirst, linkSecond, linkThird, articleName, articleInfo } = data;
   const [isOpen, setOpen] = useState(true);
 
   return (
@@ -16,13 +17,13 @@ const Menu = ({ data }) => {
         <div className="scrollingMenu">
           <ul className="menu-list">
             <li className="menu-item">
-              <a className="menu-link">{linkTextFirst}</a>
+              <Link to={linkFirst.link} className="menu-link" dangerouslySetInnerHTML={{ __html: linkFirst.text }} />
             </li>
             <li className="menu-item">
-              <a className="menu-link">{linkTextSecond}</a>
+              <Link to={linkSecond.link} className="menu-link" dangerouslySetInnerHTML={{ __html: linkSecond.text }} />
             </li>
             <li className="menu-item border">
-              <a className="menu-link">{linkTextThird}</a>
+              <Link to={linkThird.link} className="menu-link" dangerouslySetInnerHTML={{ __html: linkThird.text }} />
             </li>
           </ul>
           <ul className="menu-list">

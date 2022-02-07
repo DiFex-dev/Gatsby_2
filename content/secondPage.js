@@ -5,10 +5,10 @@ module.exports = {
     image: 'ADD_YOUR_IMAGES_PATH',
   },
   hero: {
-    backgroundImage: '/images/HomePage/HomeBanner.png',
+    backgroundImage: '/images/HomePage/CardFirst.png',
     sponsorLogo: '/images/HomePage/SponsorLogo.svg',
     mobileBackgroundImage: '',
-    title: `Gold Demand Trends:<br/>Q2 2021`,
+    title: 'Gold mid-year outlook 2021',
     subtitle: 'Subtitle',
     downloadBtn: {
       downloadFile: '/images/HomePage/Download.pdf',
@@ -61,26 +61,26 @@ module.exports = {
     },
     cardNav: {
       cardPrev: {
-        image: '/images/HomePage/CardFirst.png',
-        arrow: '/images/HomePage/NavFirst.png',
-        title: 'Gold mid-year outlook 2021',
-        description:
-          'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-        link: '/gold-demand-trends/',
-      },
-      cardNext: {
         image: '/images/HomePage/CardSecond.png',
-        arrow: '/images/HomePage/NavSecond.png',
+        arrow: '/images/HomePage/NavFirst.png',
         title: 'Gold Market Commentary',
         description:
           'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
         link: '/gold-market-commentary/',
       },
+      cardNext: {
+        image: '/images/HomePage/HomeBanner.png',
+        arrow: '/images/HomePage/NavSecond.png',
+        title: 'Gold Demand Trends Q2 2021',
+        description:
+          'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
+        link: '/',
+      },
     },
     mobileArrowFirst: '/images/HomePage/MobileNavFirst.svg',
     mobileArrowSecond: '/images/HomePage/MobileNavSecond.svg',
-    firstPage: `1`,
-    secondPage: `<b>2</b>`,
+    firstPage: `<b>1</b>`,
+    secondPage: `2`,
     thirdPage: `3`,
     quoteText: {
       quoteText:
@@ -91,11 +91,11 @@ module.exports = {
       btnIcon: '/images/HomePage/Menu-Icon.png',
       btnText: 'Articles index',
       linkFirst: {
-        text: 'Gold mid-year outlook 2021',
+        text: `<u>Gold mid-year outlook 2021</u>`,
         link: '/gold-demand-trends/',
       },
       linkSecond: {
-        text: `<u>Gold Demand Trends Q2 2021</u>`,
+        text: 'Gold Demand Trends Q2 2021',
         link: '/',
       },
       linkThird: {

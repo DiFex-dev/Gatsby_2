@@ -20,8 +20,8 @@ const style = css`
     letter-spacing: normal;
 
     @media (max-width: ${breakpoints.smallTablet}px) {
-      font-size: ${p2r(24)};
       margin: ${p2r(30)} 0 ${p2r(14)};
+      font-size: ${p2r(24)};
     }
   }
 

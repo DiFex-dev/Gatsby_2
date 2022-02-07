@@ -9,6 +9,8 @@ module.exports = {
     description: siteConfig.description,
     url: siteConfig.url,
     homePage: siteConfig.homePage,
+    secondPage: siteConfig.secondPage,
+    thirdPage: siteConfig.thirdPage,
   },
   plugins: [
     {

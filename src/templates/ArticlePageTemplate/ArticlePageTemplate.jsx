@@ -8,9 +8,9 @@ import { Layout } from '../../components/Layout';
 import { Menu } from '../../components/Menu';
 import { Navigation } from '../../components/Navigation';
 import { Quote } from '../../components/Quote';
-import styles from './HomePageTemplate.styles';
+import styles from './ArticlePageTemplate.styles';
 
-const HomePageTemplate = ({ pageContext: { PageData } }) => {
+const ArticlePageTemplate = ({ pageContext: { PageData } }) => {
   const { hero, seo, body } = PageData;
   const { title, sponsorLogo, backgroundImage, downloadBtn: goldBtn } = hero;
   const { title: seoTitle, description, image } = seo;
@@ -38,6 +38,9 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
     cardNav,
     mobileArrowFirst,
     mobileArrowSecond,
+    firstPage,
+    secondPage,
+    thirdPage,
     quoteText,
     menu,
   } = body;
@@ -70,10 +73,17 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
             </div>
           </div>
         </div>
-        <Navigation data={cardNav} mobileArrowFirst={mobileArrowFirst} mobileArrowSecond={mobileArrowSecond} />
+        <Navigation
+          data={cardNav}
+          mobileArrowFirst={mobileArrowFirst}
+          mobileArrowSecond={mobileArrowSecond}
+          firstPage={firstPage}
+          secondPage={secondPage}
+          thirdPage={thirdPage}
+        />
       </div>
     </Layout>
   );
 };
 
-export default HomePageTemplate;
+export default ArticlePageTemplate;

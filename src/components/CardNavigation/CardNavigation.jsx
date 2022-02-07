@@ -1,13 +1,14 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 import styles from './CardNavigation.styles';
 
 const CardNavigation = ({ data, direction }) => {
-  const { image, arrow, title, description } = data;
+  const { image, arrow, title, description, link } = data;
 
   return (
     <div css={styles(direction)}>
-      <a href="#" className="cardLink">
+      <Link to={link} className="cardLink">
         <div className="cardImage-container">
           <img src={image} alt="compass" className="cardImage" />
         </div>
@@ -20,7 +21,7 @@ const CardNavigation = ({ data, direction }) => {
           <h3 className="CardButton-paragraph">{title}</h3>
           <p className="CardButton-info">{description}</p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

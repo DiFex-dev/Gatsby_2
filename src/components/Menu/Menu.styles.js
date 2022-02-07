@@ -9,8 +9,8 @@ const styles = css`
 
   .menu {
     position: relative;
-    overflow: hidden;
     max-height: calc(100vh - 48px);
+    overflow: hidden;
     transition: all 0.3s ease;
   }
 
@@ -74,8 +74,8 @@ const styles = css`
     max-height: calc(100vh - 200px);
     overflow: scroll;
     overflow-x: hidden;
-    opacity: 1;
     background-color: ${colors.paleLightGold};
+    opacity: 1;
     transition: all 0.3s ease;
   }
 
@@ -97,14 +97,14 @@ const styles = css`
 
   .menu-item {
     width: 225px;
+    cursor: pointer;
+  }
+
+  .menu-link {
     ${SecondaryProps};
     font-size: ${p2r(18)};
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
     color: ${colors.grayBlack};
-    letter-spacing: normal;
-    cursor: pointer;
+    text-decoration: none;
 
     &:hover {
       color: ${colors.grayGold};

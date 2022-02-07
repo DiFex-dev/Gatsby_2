@@ -5,8 +5,8 @@ import { p2r, PrimaryProps, SecondaryProps } from '../../styles/fonts';
 
 const styles = css`
   .quote {
-    margin: ${p2r(87)} 0 ${p2r(33)};
     width: 100%;
+    margin: ${p2r(87)} 0 ${p2r(33)};
   }
 
   .quoteIcon {

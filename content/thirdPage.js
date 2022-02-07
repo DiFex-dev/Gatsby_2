@@ -5,10 +5,10 @@ module.exports = {
     image: 'ADD_YOUR_IMAGES_PATH',
   },
   hero: {
-    backgroundImage: '/images/HomePage/HomeBanner.png',
+    backgroundImage: '/images/HomePage/CardSecond.png',
     sponsorLogo: '/images/HomePage/SponsorLogo.svg',
     mobileBackgroundImage: '',
-    title: `Gold Demand Trends:<br/>Q2 2021`,
+    title: 'Gold Market Commentary',
     subtitle: 'Subtitle',
     downloadBtn: {
       downloadFile: '/images/HomePage/Download.pdf',
@@ -61,27 +61,27 @@ module.exports = {
     },
     cardNav: {
       cardPrev: {
-        image: '/images/HomePage/CardFirst.png',
+        image: '/images/HomePage/HomeBanner.png',
         arrow: '/images/HomePage/NavFirst.png',
+        title: 'Gold Demand Trends Q2 2021',
+        description:
+          'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
+        link: '/',
+      },
+      cardNext: {
+        image: '/images/HomePage/CardFirst.png',
+        arrow: '/images/HomePage/NavSecond.png',
         title: 'Gold mid-year outlook 2021',
         description:
           'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
         link: '/gold-demand-trends/',
       },
-      cardNext: {
-        image: '/images/HomePage/CardSecond.png',
-        arrow: '/images/HomePage/NavSecond.png',
-        title: 'Gold Market Commentary',
-        description:
-          'Lorem ipsum dolor sit amet, consec tetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.',
-        link: '/gold-market-commentary/',
-      },
     },
     mobileArrowFirst: '/images/HomePage/MobileNavFirst.svg',
     mobileArrowSecond: '/images/HomePage/MobileNavSecond.svg',
     firstPage: `1`,
-    secondPage: `<b>2</b>`,
-    thirdPage: `3`,
+    secondPage: `2`,
+    thirdPage: `<b>3</b>`,
     quoteText: {
       quoteText:
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.',
@@ -95,11 +95,11 @@ module.exports = {
         link: '/gold-demand-trends/',
       },
       linkSecond: {
-        text: `<u>Gold Demand Trends Q2 2021</u>`,
+        text: 'Gold Demand Trends Q2 2021',
         link: '/',
       },
       linkThird: {
-        text: 'Gold Market Commentary',
+        text: `<u>Gold Market Commentary</u>`,
         link: '/gold-market-commentary/',
       },
       articleName: 'Article X',
