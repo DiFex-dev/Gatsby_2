@@ -2,12 +2,15 @@ import React from 'react';
 
 import styles from './BodyText.styles';
 
-const BodyText = ({ subtitle, textFirst, textSecond}) => (
-  <div css={styles}>
-    {subtitle && <h2 className="subtitle">{subtitle}</h2>}
+const BodyText = ({ data }) => {
+  const { subtitle, textFirst, textSecond } = data;
+  return (
+    <div css={styles}>
+      {subtitle && <h2 className="subtitle">{subtitle}</h2>}
       <p className="body-text">{textFirst}</p>
       {textSecond && <p className="body-text second">{textSecond}</p>}
-  </div>
-);
+    </div>
+  );
+};
 
 export default BodyText;

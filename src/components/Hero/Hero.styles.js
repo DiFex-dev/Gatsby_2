@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
 import colors from '../../styles/colors';
-import { p2r } from '../../styles/fonts';
+import {p2r, PrimaryProps} from '../../styles/fonts';
 import { breakpoints } from '../../styles';
 
 const styles = css`
@@ -31,7 +31,7 @@ const styles = css`
   .title {
     width: 70%;
     margin-top: ${p2r(4)};
-    font-family: Lexia;
+    ${PrimaryProps};
     font-size: ${p2r(42)};
     font-style: italic;
     line-height: ${p2r(56)};

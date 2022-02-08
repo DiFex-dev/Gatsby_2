@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 export const Primary = `'EconSans', sans-serif`;
 
 export const PrimaryProps = css`
-  font-family: 'EconSans', sans-serif;
+  font-family: 'Zirkon', sans-serif;
 `;
 
 export const Secondary = `'MiloTE', sans-serif`;

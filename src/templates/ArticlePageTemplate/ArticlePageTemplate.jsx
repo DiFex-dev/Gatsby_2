@@ -9,12 +9,14 @@ import { Menu } from '../../components/Menu';
 import { Navigation } from '../../components/Navigation';
 import { Quote } from '../../components/Quote';
 import styles from './ArticlePageTemplate.styles';
+import componentGen from '../../components/component.index';
 
 const ArticlePageTemplate = ({ pageContext: { PageData } }) => {
   const { hero, seo, body } = PageData;
   const { title, sponsorLogo, backgroundImage, downloadBtn: goldBtn } = hero;
   const { title: seoTitle, description, image } = seo;
   const {
+    content,
     bodyTextFirst,
     bodyTextSecond,
     bodyTextThird,
@@ -44,6 +46,7 @@ const ArticlePageTemplate = ({ pageContext: { PageData } }) => {
     quoteText,
     menu,
   } = body;
+  console.log(content)
 
   return (
     <Layout title={seoTitle} description={description} image={image}>
@@ -55,18 +58,22 @@ const ArticlePageTemplate = ({ pageContext: { PageData } }) => {
               <Menu data={menu} />
             </div>
             <div className="content-container">
-              <BodyText textFirst={bodyTextFirst} textSecond={bodyTextSecond} />
-              <BodyText subtitle={subTitleFirst} textFirst={bodyTextThird} textSecond={bodyTextFourth} />
-              <Image image={statImage} alt={statAlt} />
-              <BodyText textFirst={bodyTextFifth} />
-              <BodyText subtitle={subTitleSecond} textFirst={bodyTextSixth} textSecond={bodyTextSeventh} />
-              <Image image={goldImage} alt={goldAlt} />
-              <BodyText subtitle={subTitleThird} textFirst={bodyTextEighth} textSecond={bodyTextNinth} />
-              <Image image={graphImage} alt={graphAlt} />
-              <BodyText textFirst={bodyTextTenth} />
-              <BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />
-              <Quote data={quoteText} />
-              <BodyText textFirst={bodyTextTwelve} />
+              {content.map((item) => {
+                const Component = componentGen[item.type];
+                return(<Component data={item.data}/>);
+              })}
+              {/*<BodyText textFirst={bodyTextFirst} textSecond={bodyTextSecond} />*/}
+              {/*<BodyText subtitle={subTitleFirst} textFirst={bodyTextThird} textSecond={bodyTextFourth} />*/}
+              {/*<Image image={statImage} alt={statAlt} />*/}
+              {/*<BodyText textFirst={bodyTextFifth} />*/}
+              {/*<BodyText subtitle={subTitleSecond} textFirst={bodyTextSixth} textSecond={bodyTextSeventh} />*/}
+              {/*<Image image={goldImage} alt={goldAlt} />*/}
+              {/*<BodyText subtitle={subTitleThird} textFirst={bodyTextEighth} textSecond={bodyTextNinth} />*/}
+              {/*<Image image={graphImage} alt={graphAlt} />*/}
+              {/*<BodyText textFirst={bodyTextTenth} />*/}
+              {/*<BodyText subtitle={subTitleFourth} textFirst={bodyTextEleventh} />*/}
+              {/*<Quote data={quoteText} />*/}
+              {/*<BodyText textFirst={bodyTextTwelve} />*/}
               <div className="btn-dark">
                 <DownloadBtn data={blackBtn} isDark={true} />
               </div>
