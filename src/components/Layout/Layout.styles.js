@@ -1,16 +1,22 @@
 import { css } from '@emotion/react';
 
 const styles = css`
-  .headEconSec-wrapper {
-    & > div > header > div > div {
-      border-top: none;
-      border-bottom: none;
+  @media (max-width: 768px) {
+    .css-w3a1bh-AdvertStyling > div div {
+      align-items: flex-start;
+      margin-left: 0;
     }
-  }
 
-  .main {
-    overflow: visible;
-  }
+    .headEconSec-wrapper {
+      & > div > header > div > div {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+
+    .main {
+      overflow: visible;
+    }
 `;
 
 export default styles;

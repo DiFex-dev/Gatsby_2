@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 
 import { breakpoints } from '../../styles';
 
-const styles = ({ maxWidth, width, mobileMaxWidth, mobileWidth }) => css`
+const styles = ({ maxWidth, width }) => css`
   .wrapper {
     display: flex;
     justify-content: center;
@@ -16,8 +16,8 @@ const styles = ({ maxWidth, width, mobileMaxWidth, mobileWidth }) => css`
 
   @media (max-width: ${breakpoints.hugeMobile}px) {
     .wrapper__child {
-      width: ${mobileWidth};
-      max-width: ${mobileMaxWidth};
+      width: 100%;
+      max-width: 100%;
     }
   }
 `;

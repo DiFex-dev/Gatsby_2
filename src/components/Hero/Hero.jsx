@@ -29,6 +29,9 @@ const Hero = ({ title, logo, background, goldBtn }) => {
               <DownloadBtn data={goldBtn} isDark={false} />
               <img src={background} alt="goldImage" className="heroImage" />
             </div>
+            <div className="title-icon mobile">
+              <UtilSocShare isVertical={false} hasBorder={false} hoverBase={'#B29E71'} hoverIcon={'#f9f8f5'} className="social" />
+            </div>
           </div>
         </div>
       </Wrapper>

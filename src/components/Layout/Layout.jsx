@@ -9,7 +9,7 @@ import styles from './Layout.styles';
 
 import '../../styles/normalize.css';
 import '../../fonts/fonts.css';
-import HeadImpact from "@economist/fabric-components/header/headimpact/HeadImpact";
+import HeadImpact from '@economist/fabric-components/header/headimpact/HeadImpact';
 import HeadAdvImpact from "@economist/fabric-components/header/headadvimpact/HeadAdvImpact";
 import FootEconSec from "@economist/fabric-components/footer/footeconsec/FootEconSec";
 import {hero} from "../../../content/home";

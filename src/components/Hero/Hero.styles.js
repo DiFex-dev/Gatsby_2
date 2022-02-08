@@ -1,10 +1,16 @@
 import { css } from '@emotion/react';
 
-import colors from '../../styles/colors';
-import {p2r, PrimaryProps} from '../../styles/fonts';
 import { breakpoints } from '../../styles';
+import colors from '../../styles/colors';
+import { p2r, PrimaryProps } from '../../styles/fonts';
 
 const styles = css`
+  @media (max-width: ${breakpoints.smallTablet}px) {
+    .wrapper {
+      justify-content: normal;
+    }
+  }
+
   .template-container {
     position: relative;
   }
@@ -13,6 +19,22 @@ const styles = css`
     width: 100%;
     max-width: 1440px;
     padding: 0 32px;
+    @media (max-width: ${breakpoints.smallTablet}px) {
+      padding: 0;
+      .title {
+        width: 90%;
+        margin: 0 0 0 16px;
+      }
+
+      .title-icon {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+        margin: 0 0 0 16px;
+      }
+    }
   }
 
   .title-container {
@@ -26,6 +48,10 @@ const styles = css`
     flex: 0 1 340px;
     justify-content: flex-end;
     margin-right: 80px;
+  }
+
+  .mobile {
+    display: none;
   }
 
   .title {
